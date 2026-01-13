@@ -12,8 +12,8 @@
     }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      background: linear-gradient(180deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
       min-height: 100vh;
       padding: 20px;
     }
@@ -29,20 +29,23 @@
     h1 {
       grid-column: 1 / -1;
       text-align: center;
-      color: white;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      color: #e8d5b7;
+      text-shadow: 0 0 10px rgba(232, 213, 183, 0.5), 2px 2px 4px rgba(0,0,0,0.5);
       margin-bottom: 10px;
+      font-weight: 300;
+      letter-spacing: 3px;
     }
 
     /* Character Display Area */
     .character-stage {
-      background: linear-gradient(180deg, #87CEEB 0%, #98FB98 100%);
+      background: linear-gradient(180deg, #2d3a4f 0%, #1e2738 50%, #141c28 100%);
       border-radius: 16px;
       padding: 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.1);
+      border: 1px solid rgba(232, 213, 183, 0.2);
     }
 
     .character-container {
@@ -73,10 +76,12 @@
     .character-name {
       margin-top: 15px;
       padding: 8px 20px;
-      background: white;
+      background: rgba(232, 213, 183, 0.1);
+      border: 1px solid rgba(232, 213, 183, 0.3);
       border-radius: 20px;
-      font-weight: 600;
-      color: #333;
+      font-weight: 400;
+      color: #e8d5b7;
+      letter-spacing: 1px;
     }
 
     .action-buttons {
@@ -87,39 +92,43 @@
 
     .action-btn {
       padding: 10px 20px;
-      border: none;
+      border: 1px solid rgba(255,255,255,0.2);
       border-radius: 8px;
       cursor: pointer;
-      font-weight: 600;
+      font-weight: 500;
       transition: transform 0.2s, box-shadow 0.2s;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 12px;
     }
 
     .action-btn:hover {
       transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     }
 
     .btn-reset {
-      background: #ff6b6b;
-      color: white;
+      background: linear-gradient(135deg, #8b2942 0%, #5c1a2b 100%);
+      color: #e8d5b7;
     }
 
     .btn-random {
-      background: #4ecdc4;
-      color: white;
+      background: linear-gradient(135deg, #2a6a7c 0%, #1a4a5c 100%);
+      color: #e8d5b7;
     }
 
     .btn-save {
-      background: #45b7d1;
-      color: white;
+      background: linear-gradient(135deg, #4a6741 0%, #2a4721 100%);
+      color: #e8d5b7;
     }
 
     /* Wardrobe Panel */
     .wardrobe-panel {
-      background: white;
+      background: rgba(30, 39, 56, 0.9);
       border-radius: 16px;
       padding: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      border: 1px solid rgba(232, 213, 183, 0.2);
     }
 
     .category-tabs {
@@ -127,27 +136,30 @@
       flex-wrap: wrap;
       gap: 8px;
       margin-bottom: 20px;
-      border-bottom: 2px solid #eee;
+      border-bottom: 1px solid rgba(232, 213, 183, 0.2);
       padding-bottom: 15px;
     }
 
     .tab-btn {
       padding: 10px 16px;
-      border: none;
-      background: #f0f0f0;
+      border: 1px solid rgba(232, 213, 183, 0.3);
+      background: rgba(45, 58, 79, 0.8);
       border-radius: 8px;
       cursor: pointer;
       font-weight: 500;
       transition: all 0.2s;
+      color: #a0a8b8;
     }
 
     .tab-btn:hover {
-      background: #e0e0e0;
+      background: rgba(60, 78, 105, 0.8);
+      color: #e8d5b7;
     }
 
     .tab-btn.active {
-      background: #667eea;
-      color: white;
+      background: linear-gradient(135deg, #4a6a8a 0%, #2a4a6a 100%);
+      color: #e8d5b7;
+      border-color: rgba(232, 213, 183, 0.5);
     }
 
     .items-grid {
@@ -158,36 +170,37 @@
 
     .item-option {
       aspect-ratio: 1;
-      border: 3px solid #e0e0e0;
+      border: 2px solid rgba(232, 213, 183, 0.2);
       border-radius: 12px;
       cursor: pointer;
       padding: 8px;
       transition: all 0.2s;
-      background: #fafafa;
+      background: rgba(45, 58, 79, 0.6);
       display: flex;
       align-items: center;
       justify-content: center;
     }
 
     .item-option:hover {
-      border-color: #667eea;
+      border-color: rgba(232, 213, 183, 0.6);
       transform: scale(1.05);
+      background: rgba(60, 78, 105, 0.8);
     }
 
     .item-option.selected {
-      border-color: #667eea;
-      background: #f0f0ff;
-      box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+      border-color: #e8d5b7;
+      background: rgba(74, 106, 138, 0.6);
+      box-shadow: 0 0 15px rgba(232, 213, 183, 0.3);
     }
 
     .item-option.remove-btn {
-      background: #fff5f5;
-      border-color: #ffcccc;
+      background: rgba(92, 26, 43, 0.4);
+      border-color: rgba(139, 41, 66, 0.5);
     }
 
     .item-option.remove-btn:hover {
-      background: #ffe0e0;
-      border-color: #ff6b6b;
+      background: rgba(139, 41, 66, 0.6);
+      border-color: rgba(139, 41, 66, 0.8);
     }
 
     .item-option svg {
@@ -208,7 +221,7 @@
       .game-container {
         grid-template-columns: 1fr;
       }
-      
+
       .character-stage {
         order: -1;
       }
@@ -217,29 +230,99 @@
 </head>
 <body>
   <div class="game-container">
-    <h1>✨ Dress-Up Game ✨</h1>
+    <h1>Dress-Up Game</h1>
 
     <!-- Character Display -->
     <div class="character-stage">
       <div class="character-container">
-        <!-- Base Body (always visible) -->
+        <!-- Base Body - Anime Style -->
         <svg class="layer body-base" viewBox="0 0 200 350">
-          <!-- Head -->
-          <ellipse cx="100" cy="60" rx="45" ry="50" fill="#FFDAB9"/>
+          <defs>
+            <!-- Skin gradient for depth -->
+            <linearGradient id="skinGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#fce4d6"/>
+              <stop offset="50%" style="stop-color:#f5d5c8"/>
+              <stop offset="100%" style="stop-color:#e8c4b8"/>
+            </linearGradient>
+            <!-- Shadow for depth -->
+            <linearGradient id="skinShadow" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#e8c4b8"/>
+              <stop offset="100%" style="stop-color:#f5d5c8"/>
+            </linearGradient>
+            <!-- Eye gradient -->
+            <radialGradient id="eyeGradient" cx="50%" cy="30%" r="60%">
+              <stop offset="0%" style="stop-color:#5ba3d9"/>
+              <stop offset="70%" style="stop-color:#2d5a87"/>
+              <stop offset="100%" style="stop-color:#1a3a5c"/>
+            </radialGradient>
+          </defs>
+
           <!-- Neck -->
-          <rect x="85" y="105" width="30" height="25" fill="#FFDAB9"/>
-          <!-- Body -->
-          <ellipse cx="100" cy="180" rx="50" ry="60" fill="#FFDAB9"/>
-          <!-- Arms -->
-          <ellipse cx="40" cy="180" rx="15" ry="50" fill="#FFDAB9"/>
-          <ellipse cx="160" cy="180" rx="15" ry="50" fill="#FFDAB9"/>
+          <path d="M 88 100 L 88 130 Q 88 135 93 135 L 107 135 Q 112 135 112 130 L 112 100" fill="url(#skinGradient)"/>
+          <path d="M 88 100 L 88 120 L 92 120 L 92 100" fill="url(#skinShadow)" opacity="0.3"/>
+
+          <!-- Body/Torso - slender anime proportions -->
+          <path d="M 70 130 Q 60 140 58 160 L 55 220 Q 55 230 65 235 L 95 240 L 100 242 L 105 240 L 135 235 Q 145 230 145 220 L 142 160 Q 140 140 130 130 L 112 128 L 100 130 L 88 128 Z" fill="url(#skinGradient)"/>
+
+          <!-- Arms - slender -->
+          <path d="M 58 140 Q 40 145 35 170 L 30 220 Q 28 230 32 232 L 38 232 Q 42 230 44 220 L 52 170 Q 54 155 58 145" fill="url(#skinGradient)"/>
+          <path d="M 142 140 Q 160 145 165 170 L 170 220 Q 172 230 168 232 L 162 232 Q 158 230 156 220 L 148 170 Q 146 155 142 145" fill="url(#skinGradient)"/>
+
+          <!-- Hands -->
+          <ellipse cx="35" cy="235" rx="8" ry="10" fill="url(#skinGradient)"/>
+          <ellipse cx="165" cy="235" rx="8" ry="10" fill="url(#skinGradient)"/>
+
           <!-- Legs -->
-          <ellipse cx="75" cy="290" rx="18" ry="55" fill="#FFDAB9"/>
-          <ellipse cx="125" cy="290" rx="18" ry="55" fill="#FFDAB9"/>
-          <!-- Face -->
-          <ellipse cx="80" cy="55" rx="5" ry="6" fill="#333"/>
-          <ellipse cx="120" cy="55" rx="5" ry="6" fill="#333"/>
-          <path d="M 90 75 Q 100 85 110 75" stroke="#333" stroke-width="2" fill="none"/>
+          <path d="M 65 235 L 60 320 Q 58 335 65 340 L 85 340 Q 92 335 90 320 L 95 240" fill="url(#skinGradient)"/>
+          <path d="M 135 235 L 140 320 Q 142 335 135 340 L 115 340 Q 108 335 110 320 L 105 240" fill="url(#skinGradient)"/>
+
+          <!-- Head - larger anime proportions -->
+          <ellipse cx="100" cy="58" rx="42" ry="48" fill="url(#skinGradient)"/>
+
+          <!-- Face shadow -->
+          <ellipse cx="100" cy="62" rx="38" ry="42" fill="url(#skinShadow)" opacity="0.1"/>
+
+          <!-- Ears -->
+          <ellipse cx="58" cy="60" rx="5" ry="8" fill="url(#skinGradient)"/>
+          <ellipse cx="142" cy="60" rx="5" ry="8" fill="url(#skinGradient)"/>
+
+          <!-- Eyes - Large anime style -->
+          <!-- Left eye -->
+          <ellipse cx="78" cy="55" rx="14" ry="16" fill="#fff"/>
+          <ellipse cx="80" cy="56" rx="11" ry="13" fill="url(#eyeGradient)"/>
+          <ellipse cx="80" cy="56" rx="6" ry="7" fill="#1a2a3a"/>
+          <ellipse cx="83" cy="52" rx="4" ry="3" fill="#fff"/>
+          <ellipse cx="77" cy="59" rx="2" ry="1.5" fill="#fff" opacity="0.7"/>
+          <path d="M 64 48 Q 78 44 92 50" stroke="#3a2820" stroke-width="2" fill="none"/>
+
+          <!-- Right eye -->
+          <ellipse cx="122" cy="55" rx="14" ry="16" fill="#fff"/>
+          <ellipse cx="120" cy="56" rx="11" ry="13" fill="url(#eyeGradient)"/>
+          <ellipse cx="120" cy="56" rx="6" ry="7" fill="#1a2a3a"/>
+          <ellipse cx="123" cy="52" rx="4" ry="3" fill="#fff"/>
+          <ellipse cx="117" cy="59" rx="2" ry="1.5" fill="#fff" opacity="0.7"/>
+          <path d="M 108 50 Q 122 44 136 48" stroke="#3a2820" stroke-width="2" fill="none"/>
+
+          <!-- Eyelashes -->
+          <path d="M 64 50 L 62 46" stroke="#3a2820" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M 67 48 L 64 44" stroke="#3a2820" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M 136 50 L 138 46" stroke="#3a2820" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M 133 48 L 136 44" stroke="#3a2820" stroke-width="1.5" stroke-linecap="round"/>
+
+          <!-- Eyebrows -->
+          <path d="M 66 40 Q 78 36 90 40" stroke="#5a4030" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <path d="M 110 40 Q 122 36 134 40" stroke="#5a4030" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+          <!-- Nose - subtle anime style -->
+          <path d="M 100 65 L 98 75 Q 100 78 102 75" stroke="#d4a89a" stroke-width="1.5" fill="none"/>
+
+          <!-- Mouth - small anime style -->
+          <path d="M 92 88 Q 100 93 108 88" stroke="#c4756a" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <path d="M 96 86 Q 100 84 104 86" stroke="#e8a090" stroke-width="1" fill="none"/>
+
+          <!-- Blush marks -->
+          <ellipse cx="70" cy="72" rx="8" ry="4" fill="#e8a8a0" opacity="0.4"/>
+          <ellipse cx="130" cy="72" rx="8" ry="4" fill="#e8a8a0" opacity="0.4"/>
         </svg>
 
         <!-- Clothing Slots (will be populated by JS) -->
@@ -279,9 +362,7 @@
 
   <script>
     // ============================================
-    // CLOTHING DATA - Add your own items here!
-    // Each item has SVG content that gets placed
-    // on the character at the appropriate layer
+    // CLOTHING DATA - Anime/Castlevania Style
     // ============================================
     const clothingData = {
       hair: [
@@ -292,43 +373,150 @@
           isRemove: true
         },
         {
-          id: 'hair-short',
-          name: 'Short Hair',
-          color: '#8B4513',
-          svg: `<ellipse cx="100" cy="35" rx="50" ry="35" fill="#8B4513"/>
-                <ellipse cx="55" cy="55" rx="15" ry="25" fill="#8B4513"/>
-                <ellipse cx="145" cy="55" rx="15" ry="25" fill="#8B4513"/>`
+          id: 'hair-sypha',
+          name: 'Speaker Magician',
+          color: '#e8d5a0',
+          svg: `
+            <defs>
+              <linearGradient id="blondeHair" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#f5e6c0"/>
+                <stop offset="50%" style="stop-color:#e8d5a0"/>
+                <stop offset="100%" style="stop-color:#d4c088"/>
+              </linearGradient>
+            </defs>
+            <!-- Main hair volume -->
+            <ellipse cx="100" cy="30" rx="48" ry="35" fill="url(#blondeHair)"/>
+            <!-- Side hair flowing -->
+            <path d="M 52 40 Q 45 60 48 90 Q 50 120 55 150 Q 52 160 50 170" stroke="url(#blondeHair)" stroke-width="20" fill="none" stroke-linecap="round"/>
+            <path d="M 148 40 Q 155 60 152 90 Q 150 120 145 150 Q 148 160 150 170" stroke="url(#blondeHair)" stroke-width="20" fill="none" stroke-linecap="round"/>
+            <!-- Bangs -->
+            <path d="M 62 35 Q 70 55 68 65" stroke="url(#blondeHair)" stroke-width="12" fill="none" stroke-linecap="round"/>
+            <path d="M 75 30 Q 80 52 76 62" stroke="url(#blondeHair)" stroke-width="10" fill="none" stroke-linecap="round"/>
+            <path d="M 90 28 Q 88 48 85 58" stroke="url(#blondeHair)" stroke-width="8" fill="none" stroke-linecap="round"/>
+            <path d="M 110 28 Q 112 48 115 58" stroke="url(#blondeHair)" stroke-width="8" fill="none" stroke-linecap="round"/>
+            <path d="M 125 30 Q 120 52 124 62" stroke="url(#blondeHair)" stroke-width="10" fill="none" stroke-linecap="round"/>
+            <path d="M 138 35 Q 130 55 132 65" stroke="url(#blondeHair)" stroke-width="12" fill="none" stroke-linecap="round"/>
+            <!-- Hair shine -->
+            <path d="M 75 20 Q 100 15 125 20" stroke="#fff" stroke-width="3" fill="none" opacity="0.4"/>
+          `
         },
         {
-          id: 'hair-long',
-          name: 'Long Hair',
-          color: '#FFD700',
-          svg: `<ellipse cx="100" cy="35" rx="52" ry="38" fill="#FFD700"/>
-                <ellipse cx="50" cy="80" rx="20" ry="60" fill="#FFD700"/>
-                <ellipse cx="150" cy="80" rx="20" ry="60" fill="#FFD700"/>
-                <rect x="48" y="80" width="104" height="80" fill="#FFD700"/>`
+          id: 'hair-long-dark',
+          name: 'Long Raven',
+          color: '#2a2035',
+          svg: `
+            <defs>
+              <linearGradient id="darkHair" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#3a3045"/>
+                <stop offset="50%" style="stop-color:#2a2035"/>
+                <stop offset="100%" style="stop-color:#1a1525"/>
+              </linearGradient>
+            </defs>
+            <!-- Main hair volume -->
+            <ellipse cx="100" cy="28" rx="50" ry="38" fill="url(#darkHair)"/>
+            <!-- Long flowing hair -->
+            <path d="M 50 35 Q 35 80 40 150 Q 42 200 50 250" stroke="url(#darkHair)" stroke-width="25" fill="none" stroke-linecap="round"/>
+            <path d="M 150 35 Q 165 80 160 150 Q 158 200 150 250" stroke="url(#darkHair)" stroke-width="25" fill="none" stroke-linecap="round"/>
+            <!-- Middle back hair -->
+            <path d="M 70 50 Q 65 120 70 200 Q 72 230 75 260" stroke="url(#darkHair)" stroke-width="18" fill="none" stroke-linecap="round"/>
+            <path d="M 130 50 Q 135 120 130 200 Q 128 230 125 260" stroke="url(#darkHair)" stroke-width="18" fill="none" stroke-linecap="round"/>
+            <!-- Bangs -->
+            <path d="M 60 32 Q 65 50 62 65" stroke="url(#darkHair)" stroke-width="14" fill="none" stroke-linecap="round"/>
+            <path d="M 80 28 Q 78 48 75 60" stroke="url(#darkHair)" stroke-width="10" fill="none" stroke-linecap="round"/>
+            <path d="M 120 28 Q 122 48 125 60" stroke="url(#darkHair)" stroke-width="10" fill="none" stroke-linecap="round"/>
+            <path d="M 140 32 Q 135 50 138 65" stroke="url(#darkHair)" stroke-width="14" fill="none" stroke-linecap="round"/>
+            <!-- Hair shine -->
+            <path d="M 70 18 Q 100 12 130 18" stroke="#6a5a7a" stroke-width="3" fill="none" opacity="0.5"/>
+          `
         },
         {
-          id: 'hair-curly',
-          name: 'Curly Hair',
-          color: '#DC143C',
-          svg: `<circle cx="70" cy="30" r="20" fill="#DC143C"/>
-                <circle cx="100" cy="20" r="22" fill="#DC143C"/>
-                <circle cx="130" cy="30" r="20" fill="#DC143C"/>
-                <circle cx="50" cy="55" r="18" fill="#DC143C"/>
-                <circle cx="150" cy="55" r="18" fill="#DC143C"/>
-                <circle cx="45" cy="90" r="16" fill="#DC143C"/>
-                <circle cx="155" cy="90" r="16" fill="#DC143C"/>`
+          id: 'hair-short-warrior',
+          name: 'Warrior Cut',
+          color: '#8b4a2a',
+          svg: `
+            <defs>
+              <linearGradient id="brownHair" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#a05a3a"/>
+                <stop offset="50%" style="stop-color:#8b4a2a"/>
+                <stop offset="100%" style="stop-color:#6a3a1a"/>
+              </linearGradient>
+            </defs>
+            <!-- Main volume -->
+            <ellipse cx="100" cy="30" rx="48" ry="35" fill="url(#brownHair)"/>
+            <!-- Spiky texture -->
+            <path d="M 55 40 Q 50 25 55 15" stroke="url(#brownHair)" stroke-width="8" fill="none" stroke-linecap="round"/>
+            <path d="M 70 35 Q 68 18 75 8" stroke="url(#brownHair)" stroke-width="7" fill="none" stroke-linecap="round"/>
+            <path d="M 90 32 Q 92 15 95 5" stroke="url(#brownHair)" stroke-width="6" fill="none" stroke-linecap="round"/>
+            <path d="M 110 32 Q 108 15 105 5" stroke="url(#brownHair)" stroke-width="6" fill="none" stroke-linecap="round"/>
+            <path d="M 130 35 Q 132 18 125 8" stroke="url(#brownHair)" stroke-width="7" fill="none" stroke-linecap="round"/>
+            <path d="M 145 40 Q 150 25 145 15" stroke="url(#brownHair)" stroke-width="8" fill="none" stroke-linecap="round"/>
+            <!-- Side pieces -->
+            <path d="M 54 55 Q 48 70 50 85" stroke="url(#brownHair)" stroke-width="12" fill="none" stroke-linecap="round"/>
+            <path d="M 146 55 Q 152 70 150 85" stroke="url(#brownHair)" stroke-width="12" fill="none" stroke-linecap="round"/>
+          `
         },
         {
-          id: 'hair-ponytail',
-          name: 'Ponytail',
-          color: '#4A4A4A',
-          svg: `<ellipse cx="100" cy="35" rx="50" ry="35" fill="#4A4A4A"/>
-                <ellipse cx="55" cy="55" rx="12" ry="20" fill="#4A4A4A"/>
-                <ellipse cx="145" cy="55" rx="12" ry="20" fill="#4A4A4A"/>
-                <ellipse cx="100" cy="5" rx="15" ry="10" fill="#4A4A4A"/>
-                <ellipse cx="100" cy="-30" rx="20" ry="35" fill="#4A4A4A"/>`
+          id: 'hair-twin-tails',
+          name: 'Twin Tails',
+          color: '#c44a6a',
+          svg: `
+            <defs>
+              <linearGradient id="pinkHair" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#d46a8a"/>
+                <stop offset="50%" style="stop-color:#c44a6a"/>
+                <stop offset="100%" style="stop-color:#a43a5a"/>
+              </linearGradient>
+            </defs>
+            <!-- Main volume -->
+            <ellipse cx="100" cy="30" rx="46" ry="34" fill="url(#pinkHair)"/>
+            <!-- Twin tails -->
+            <ellipse cx="45" cy="50" rx="12" ry="15" fill="url(#pinkHair)"/>
+            <path d="M 45 65 Q 35 120 40 180 Q 42 220 50 260" stroke="url(#pinkHair)" stroke-width="20" fill="none" stroke-linecap="round"/>
+            <ellipse cx="155" cy="50" rx="12" ry="15" fill="url(#pinkHair)"/>
+            <path d="M 155 65 Q 165 120 160 180 Q 158 220 150 260" stroke="url(#pinkHair)" stroke-width="20" fill="none" stroke-linecap="round"/>
+            <!-- Bangs -->
+            <path d="M 65 30 Q 70 50 68 62" stroke="url(#pinkHair)" stroke-width="10" fill="none" stroke-linecap="round"/>
+            <path d="M 85 28 Q 82 48 80 58" stroke="url(#pinkHair)" stroke-width="8" fill="none" stroke-linecap="round"/>
+            <path d="M 115 28 Q 118 48 120 58" stroke="url(#pinkHair)" stroke-width="8" fill="none" stroke-linecap="round"/>
+            <path d="M 135 30 Q 130 50 132 62" stroke="url(#pinkHair)" stroke-width="10" fill="none" stroke-linecap="round"/>
+            <!-- Hair ties -->
+            <ellipse cx="45" cy="55" rx="8" ry="5" fill="#4a2a3a"/>
+            <ellipse cx="155" cy="55" rx="8" ry="5" fill="#4a2a3a"/>
+          `
+        },
+        {
+          id: 'hair-braid',
+          name: 'Side Braid',
+          color: '#d4a060',
+          svg: `
+            <defs>
+              <linearGradient id="goldHair" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#e4b070"/>
+                <stop offset="50%" style="stop-color:#d4a060"/>
+                <stop offset="100%" style="stop-color:#c49050"/>
+              </linearGradient>
+            </defs>
+            <!-- Main volume -->
+            <ellipse cx="100" cy="30" rx="47" ry="35" fill="url(#goldHair)"/>
+            <!-- Side volume -->
+            <path d="M 55 45 Q 52 60 54 80" stroke="url(#goldHair)" stroke-width="14" fill="none" stroke-linecap="round"/>
+            <path d="M 145 45 Q 148 60 146 80" stroke="url(#goldHair)" stroke-width="14" fill="none" stroke-linecap="round"/>
+            <!-- Braid going over shoulder -->
+            <path d="M 145 70 Q 160 90 155 120 Q 150 150 160 180 Q 165 210 155 240" stroke="url(#goldHair)" stroke-width="16" fill="none" stroke-linecap="round"/>
+            <!-- Braid pattern -->
+            <path d="M 152 95 Q 158 95 160 100 Q 158 105 152 105" stroke="#c49050" stroke-width="2" fill="none"/>
+            <path d="M 150 115 Q 156 115 158 120 Q 156 125 150 125" stroke="#c49050" stroke-width="2" fill="none"/>
+            <path d="M 152 135 Q 158 135 160 140 Q 158 145 152 145" stroke="#c49050" stroke-width="2" fill="none"/>
+            <path d="M 155 155 Q 161 155 163 160 Q 161 165 155 165" stroke="#c49050" stroke-width="2" fill="none"/>
+            <path d="M 158 175 Q 164 175 166 180 Q 164 185 158 185" stroke="#c49050" stroke-width="2" fill="none"/>
+            <!-- Bangs -->
+            <path d="M 68 32 Q 72 52 70 62" stroke="url(#goldHair)" stroke-width="11" fill="none" stroke-linecap="round"/>
+            <path d="M 88 28 Q 85 48 82 58" stroke="url(#goldHair)" stroke-width="9" fill="none" stroke-linecap="round"/>
+            <path d="M 112 28 Q 115 48 118 58" stroke="url(#goldHair)" stroke-width="9" fill="none" stroke-linecap="round"/>
+            <path d="M 132 32 Q 128 52 130 62" stroke="url(#goldHair)" stroke-width="11" fill="none" stroke-linecap="round"/>
+            <!-- Hair ribbon -->
+            <ellipse cx="155" cy="245" rx="10" ry="6" fill="#8b2942"/>
+          `
         }
       ],
       top: [
@@ -339,48 +527,172 @@
           isRemove: true
         },
         {
-          id: 'top-tshirt',
-          name: 'T-Shirt',
-          color: '#4169E1',
-          svg: `<path d="M 50 130 L 50 220 L 150 220 L 150 130 L 130 120 L 120 130 L 80 130 L 70 120 Z" fill="#4169E1"/>
-                <ellipse cx="40" cy="160" rx="18" ry="35" fill="#4169E1"/>
-                <ellipse cx="160" cy="160" rx="18" ry="35" fill="#4169E1"/>`
+          id: 'top-speaker-robe',
+          name: 'Speaker Robe',
+          color: '#4a8ab0',
+          svg: `
+            <defs>
+              <linearGradient id="speakerRobe" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#5a9ac0"/>
+                <stop offset="50%" style="stop-color:#4a8ab0"/>
+                <stop offset="100%" style="stop-color:#3a7aa0"/>
+              </linearGradient>
+              <linearGradient id="robeAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#e8d5b7"/>
+                <stop offset="100%" style="stop-color:#d4c0a0"/>
+              </linearGradient>
+            </defs>
+            <!-- Main robe body extending to dress length -->
+            <path d="M 65 125 Q 55 135 52 155 L 45 280 L 155 280 L 148 155 Q 145 135 135 125 L 118 122 Q 100 130 82 122 Z" fill="url(#speakerRobe)"/>
+            <!-- Gold trim at neckline -->
+            <path d="M 82 122 Q 100 135 118 122" stroke="url(#robeAccent)" stroke-width="4" fill="none"/>
+            <!-- Decorative patterns -->
+            <path d="M 75 150 L 75 260" stroke="url(#robeAccent)" stroke-width="2" opacity="0.6"/>
+            <path d="M 125 150 L 125 260" stroke="url(#robeAccent)" stroke-width="2" opacity="0.6"/>
+            <!-- Sleeves -->
+            <path d="M 52 140 Q 35 150 28 180 L 25 215 Q 22 225 28 228 L 42 228 Q 48 225 46 215 L 50 175 Q 52 160 55 150" fill="url(#speakerRobe)"/>
+            <path d="M 148 140 Q 165 150 172 180 L 175 215 Q 178 225 172 228 L 158 228 Q 152 225 154 215 L 150 175 Q 148 160 145 150" fill="url(#speakerRobe)"/>
+            <!-- Sleeve trim -->
+            <path d="M 25 218 Q 35 222 46 218" stroke="url(#robeAccent)" stroke-width="3" fill="none"/>
+            <path d="M 154 218 Q 165 222 175 218" stroke="url(#robeAccent)" stroke-width="3" fill="none"/>
+            <!-- Hem decoration -->
+            <path d="M 45 275 L 155 275" stroke="url(#robeAccent)" stroke-width="4"/>
+            <circle cx="100" cy="145" r="5" fill="url(#robeAccent)"/>
+          `
         },
         {
-          id: 'top-dress',
-          name: 'Dress',
-          color: '#FF69B4',
-          svg: `<path d="M 50 130 L 40 280 L 160 280 L 150 130 L 130 120 L 115 130 L 85 130 L 70 120 Z" fill="#FF69B4"/>
-                <ellipse cx="40" cy="155" rx="15" ry="30" fill="#FF69B4"/>
-                <ellipse cx="160" cy="155" rx="15" ry="30" fill="#FF69B4"/>
-                <path d="M 80 130 Q 100 145 120 130" stroke="#FF1493" stroke-width="3" fill="none"/>`
+          id: 'top-belmont-tunic',
+          name: 'Hunter Tunic',
+          color: '#3a3a3a',
+          svg: `
+            <defs>
+              <linearGradient id="hunterTunic" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#4a4a4a"/>
+                <stop offset="50%" style="stop-color:#3a3a3a"/>
+                <stop offset="100%" style="stop-color:#2a2a2a"/>
+              </linearGradient>
+              <linearGradient id="leatherBrown" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#8b5a3a"/>
+                <stop offset="100%" style="stop-color:#6a4a2a"/>
+              </linearGradient>
+            </defs>
+            <!-- Main tunic -->
+            <path d="M 62 125 Q 55 135 52 150 L 52 225 L 148 225 L 148 150 Q 145 135 138 125 L 120 120 L 112 128 L 88 128 L 80 120 Z" fill="url(#hunterTunic)"/>
+            <!-- Collar -->
+            <path d="M 80 120 L 88 135 L 100 140 L 112 135 L 120 120" stroke="#5a5a5a" stroke-width="3" fill="none"/>
+            <!-- Belt -->
+            <rect x="52" y="195" width="96" height="12" fill="url(#leatherBrown)"/>
+            <rect x="95" y="192" width="10" height="18" rx="2" fill="#c4a060"/>
+            <!-- Sleeves -->
+            <path d="M 52 135 Q 35 145 30 175 L 28 210 Q 26 218 32 220 L 44 220 Q 50 218 48 210 L 50 175 Q 52 155 55 145" fill="url(#hunterTunic)"/>
+            <path d="M 148 135 Q 165 145 170 175 L 172 210 Q 174 218 168 220 L 156 220 Q 150 218 152 210 L 150 175 Q 148 155 145 145" fill="url(#hunterTunic)"/>
+            <!-- Arm guards -->
+            <rect x="28" y="185" width="20" height="25" rx="3" fill="url(#leatherBrown)"/>
+            <rect x="152" y="185" width="20" height="25" rx="3" fill="url(#leatherBrown)"/>
+          `
         },
         {
-          id: 'top-hoodie',
-          name: 'Hoodie',
-          color: '#2F4F4F',
-          svg: `<path d="M 45 130 L 45 225 L 155 225 L 155 130 L 130 115 L 115 125 L 85 125 L 70 115 Z" fill="#2F4F4F"/>
-                <ellipse cx="35" cy="165" rx="20" ry="40" fill="#2F4F4F"/>
-                <ellipse cx="165" cy="165" rx="20" ry="40" fill="#2F4F4F"/>
-                <ellipse cx="100" cy="105" rx="30" ry="15" fill="#2F4F4F"/>
-                <rect x="90" y="140" width="20" height="60" fill="#1F3F3F"/>`
+          id: 'top-noble-dress',
+          name: 'Noble Gown',
+          color: '#6a2a4a',
+          svg: `
+            <defs>
+              <linearGradient id="nobleDress" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#8a3a5a"/>
+                <stop offset="50%" style="stop-color:#6a2a4a"/>
+                <stop offset="100%" style="stop-color:#5a1a3a"/>
+              </linearGradient>
+              <linearGradient id="goldTrim" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#d4a860"/>
+                <stop offset="100%" style="stop-color:#b08040"/>
+              </linearGradient>
+            </defs>
+            <!-- Bodice -->
+            <path d="M 65 125 Q 58 135 55 150 L 55 200 L 145 200 L 145 150 Q 142 135 135 125 L 115 120 Q 100 128 85 120 Z" fill="url(#nobleDress)"/>
+            <!-- Full skirt -->
+            <path d="M 55 198 Q 40 220 35 280 L 165 280 Q 160 220 145 198 Z" fill="url(#nobleDress)"/>
+            <!-- Corset lacing -->
+            <line x1="100" y1="135" x2="100" y2="195" stroke="url(#goldTrim)" stroke-width="2"/>
+            <path d="M 92 145 L 100 150 L 108 145" stroke="url(#goldTrim)" stroke-width="1.5" fill="none"/>
+            <path d="M 92 160 L 100 165 L 108 160" stroke="url(#goldTrim)" stroke-width="1.5" fill="none"/>
+            <path d="M 92 175 L 100 180 L 108 175" stroke="url(#goldTrim)" stroke-width="1.5" fill="none"/>
+            <!-- Neckline decoration -->
+            <path d="M 85 120 Q 100 130 115 120" stroke="url(#goldTrim)" stroke-width="3" fill="none"/>
+            <circle cx="100" cy="128" r="4" fill="url(#goldTrim)"/>
+            <!-- Puffed sleeves -->
+            <ellipse cx="48" cy="145" rx="18" ry="22" fill="url(#nobleDress)"/>
+            <ellipse cx="152" cy="145" rx="18" ry="22" fill="url(#nobleDress)"/>
+            <!-- Sleeve cuffs -->
+            <ellipse cx="38" cy="175" rx="10" ry="8" fill="url(#goldTrim)" opacity="0.8"/>
+            <ellipse cx="162" cy="175" rx="10" ry="8" fill="url(#goldTrim)" opacity="0.8"/>
+            <!-- Skirt decoration -->
+            <path d="M 40 270 Q 100 285 160 270" stroke="url(#goldTrim)" stroke-width="3" fill="none"/>
+          `
         },
         {
-          id: 'top-tank',
-          name: 'Tank Top',
-          color: '#FF6347',
-          svg: `<path d="M 60 125 L 55 220 L 145 220 L 140 125 L 120 120 L 115 125 L 85 125 L 80 120 Z" fill="#FF6347"/>`
+          id: 'top-mage-cloak',
+          name: 'Mage Cloak',
+          color: '#2a3a5a',
+          svg: `
+            <defs>
+              <linearGradient id="mageCloak" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#3a4a6a"/>
+                <stop offset="50%" style="stop-color:#2a3a5a"/>
+                <stop offset="100%" style="stop-color:#1a2a4a"/>
+              </linearGradient>
+              <linearGradient id="silverTrim" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#c0c0d0"/>
+                <stop offset="100%" style="stop-color:#9090a0"/>
+              </linearGradient>
+            </defs>
+            <!-- Inner tunic -->
+            <path d="M 68 125 L 60 225 L 140 225 L 132 125 L 115 120 L 100 128 L 85 120 Z" fill="#1a1a2a"/>
+            <!-- Outer cloak -->
+            <path d="M 55 115 Q 30 130 25 180 L 20 280 L 50 280 L 55 180 Q 58 150 62 130" fill="url(#mageCloak)"/>
+            <path d="M 145 115 Q 170 130 175 180 L 180 280 L 150 280 L 145 180 Q 142 150 138 130" fill="url(#mageCloak)"/>
+            <!-- Cloak clasp area -->
+            <path d="M 62 115 Q 100 125 138 115" stroke="url(#mageCloak)" stroke-width="20" fill="none"/>
+            <!-- Silver clasp -->
+            <circle cx="100" cy="120" r="8" fill="url(#silverTrim)"/>
+            <circle cx="100" cy="120" r="4" fill="#4a5a8a"/>
+            <!-- Mystical runes on cloak -->
+            <path d="M 30 200 L 35 210 L 30 220 L 40 215 L 30 200" stroke="url(#silverTrim)" stroke-width="1.5" fill="none" opacity="0.6"/>
+            <path d="M 165 200 L 170 210 L 165 220 L 175 215 L 165 200" stroke="url(#silverTrim)" stroke-width="1.5" fill="none" opacity="0.6"/>
+            <circle cx="35" cy="250" r="5" stroke="url(#silverTrim)" stroke-width="1" fill="none" opacity="0.5"/>
+            <circle cx="165" cy="250" r="5" stroke="url(#silverTrim)" stroke-width="1" fill="none" opacity="0.5"/>
+          `
         },
         {
-          id: 'top-sweater',
-          name: 'Sweater',
-          color: '#9370DB',
-          svg: `<path d="M 48 130 L 48 225 L 152 225 L 152 130 L 130 118 L 118 128 L 82 128 L 70 118 Z" fill="#9370DB"/>
-                <ellipse cx="38" cy="165" rx="18" ry="42" fill="#9370DB"/>
-                <ellipse cx="162" cy="165" rx="18" ry="42" fill="#9370DB"/>
-                <line x1="48" y1="150" x2="152" y2="150" stroke="#7B68EE" stroke-width="4"/>
-                <line x1="48" y1="170" x2="152" y2="170" stroke="#7B68EE" stroke-width="4"/>
-                <line x1="48" y1="190" x2="152" y2="190" stroke="#7B68EE" stroke-width="4"/>`
+          id: 'top-priestess',
+          name: 'Priestess Vestment',
+          color: '#f0e8d8',
+          svg: `
+            <defs>
+              <linearGradient id="priestessRobe" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#f8f0e0"/>
+                <stop offset="50%" style="stop-color:#f0e8d8"/>
+                <stop offset="100%" style="stop-color:#e8e0d0"/>
+              </linearGradient>
+              <linearGradient id="holyGold" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#e0c060"/>
+                <stop offset="100%" style="stop-color:#c0a040"/>
+              </linearGradient>
+            </defs>
+            <!-- Main vestment -->
+            <path d="M 62 125 Q 52 140 48 165 L 42 280 L 158 280 L 152 165 Q 148 140 138 125 L 118 120 Q 100 130 82 120 Z" fill="url(#priestessRobe)"/>
+            <!-- Holy symbol on chest -->
+            <circle cx="100" cy="155" r="12" fill="none" stroke="url(#holyGold)" stroke-width="2"/>
+            <line x1="100" y1="143" x2="100" y2="167" stroke="url(#holyGold)" stroke-width="2"/>
+            <line x1="88" y1="155" x2="112" y2="155" stroke="url(#holyGold)" stroke-width="2"/>
+            <!-- Flowing sleeves -->
+            <path d="M 48 140 Q 25 155 20 200 L 18 240 Q 15 255 30 255 L 45 245 Q 48 240 50 230 L 50 175 Q 50 155 52 145" fill="url(#priestessRobe)"/>
+            <path d="M 152 140 Q 175 155 180 200 L 182 240 Q 185 255 170 255 L 155 245 Q 152 240 150 230 L 150 175 Q 150 155 148 145" fill="url(#priestessRobe)"/>
+            <!-- Gold sash -->
+            <path d="M 55 190 Q 100 200 145 190" stroke="url(#holyGold)" stroke-width="8" fill="none"/>
+            <path d="M 95 195 L 90 230 Q 88 240 95 242 L 105 242 Q 112 240 110 230 L 105 195" fill="url(#holyGold)"/>
+            <!-- Neckline -->
+            <path d="M 82 120 Q 100 132 118 120" stroke="url(#holyGold)" stroke-width="3" fill="none"/>
+          `
         }
       ],
       bottom: [
@@ -391,30 +703,97 @@
           isRemove: true
         },
         {
-          id: 'bottom-jeans',
-          name: 'Jeans',
-          color: '#1E90FF',
-          svg: `<path d="M 55 215 L 55 340 L 90 340 L 95 250 L 105 250 L 110 340 L 145 340 L 145 215 Z" fill="#1E90FF"/>
-                <line x1="75" y1="230" x2="75" y2="320" stroke="#187bcd" stroke-width="2"/>
-                <line x1="125" y1="230" x2="125" y2="320" stroke="#187bcd" stroke-width="2"/>`
+          id: 'bottom-traveler-pants',
+          name: 'Traveler Pants',
+          color: '#4a3a2a',
+          svg: `
+            <defs>
+              <linearGradient id="travelerPants" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#5a4a3a"/>
+                <stop offset="50%" style="stop-color:#4a3a2a"/>
+                <stop offset="100%" style="stop-color:#3a2a1a"/>
+              </linearGradient>
+            </defs>
+            <path d="M 60 220 L 58 335 Q 58 340 65 340 L 90 340 Q 95 338 95 332 L 98 255 L 102 255 L 105 332 Q 105 338 110 340 L 135 340 Q 142 340 142 335 L 140 220 Z" fill="url(#travelerPants)"/>
+            <!-- Stitching details -->
+            <line x1="75" y1="235" x2="75" y2="330" stroke="#3a2a1a" stroke-width="1.5" stroke-dasharray="5,3"/>
+            <line x1="125" y1="235" x2="125" y2="330" stroke="#3a2a1a" stroke-width="1.5" stroke-dasharray="5,3"/>
+            <!-- Knee patches -->
+            <ellipse cx="75" cy="280" rx="10" ry="15" fill="#5a4a3a" opacity="0.5"/>
+            <ellipse cx="125" cy="280" rx="10" ry="15" fill="#5a4a3a" opacity="0.5"/>
+          `
         },
         {
-          id: 'bottom-skirt',
-          name: 'Skirt',
-          color: '#FF69B4',
-          svg: `<path d="M 55 215 L 40 290 L 160 290 L 145 215 Z" fill="#FF69B4"/>`
+          id: 'bottom-battle-skirt',
+          name: 'Battle Skirt',
+          color: '#5a2a2a',
+          svg: `
+            <defs>
+              <linearGradient id="battleSkirt" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#6a3a3a"/>
+                <stop offset="50%" style="stop-color:#5a2a2a"/>
+                <stop offset="100%" style="stop-color:#4a1a1a"/>
+              </linearGradient>
+              <linearGradient id="metalPlate" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#8a8a8a"/>
+                <stop offset="100%" style="stop-color:#5a5a5a"/>
+              </linearGradient>
+            </defs>
+            <!-- Layered armor skirt -->
+            <path d="M 55 218 L 45 290 L 70 295 L 75 260 L 85 295 L 100 298 L 115 295 L 125 260 L 130 295 L 155 290 L 145 218 Z" fill="url(#battleSkirt)"/>
+            <!-- Metal plates -->
+            <path d="M 65 225 L 60 265 L 80 268 L 82 230 Z" fill="url(#metalPlate)" opacity="0.7"/>
+            <path d="M 95 228 L 92 272 L 108 272 L 105 228 Z" fill="url(#metalPlate)" opacity="0.7"/>
+            <path d="M 118 230 L 120 268 L 140 265 L 135 225 Z" fill="url(#metalPlate)" opacity="0.7"/>
+            <!-- Decorative studs -->
+            <circle cx="70" cy="235" r="3" fill="#c0a060"/>
+            <circle cx="100" cy="238" r="3" fill="#c0a060"/>
+            <circle cx="130" cy="235" r="3" fill="#c0a060"/>
+          `
+        },
+        {
+          id: 'bottom-flowing-skirt',
+          name: 'Flowing Skirt',
+          color: '#3a5a7a',
+          svg: `
+            <defs>
+              <linearGradient id="flowingSkirt" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#4a6a8a"/>
+                <stop offset="50%" style="stop-color:#3a5a7a"/>
+                <stop offset="100%" style="stop-color:#2a4a6a"/>
+              </linearGradient>
+            </defs>
+            <!-- Flowing elegant skirt -->
+            <path d="M 55 218 Q 50 250 45 300 Q 42 320 50 335 Q 70 345 100 348 Q 130 345 150 335 Q 158 320 155 300 Q 150 250 145 218 Z" fill="url(#flowingSkirt)"/>
+            <!-- Fabric folds -->
+            <path d="M 60 225 Q 55 270 58 320" stroke="#2a4a6a" stroke-width="2" fill="none" opacity="0.5"/>
+            <path d="M 80 222 Q 75 280 82 340" stroke="#2a4a6a" stroke-width="2" fill="none" opacity="0.5"/>
+            <path d="M 100 220 Q 100 280 100 345" stroke="#2a4a6a" stroke-width="2" fill="none" opacity="0.5"/>
+            <path d="M 120 222 Q 125 280 118 340" stroke="#2a4a6a" stroke-width="2" fill="none" opacity="0.5"/>
+            <path d="M 140 225 Q 145 270 142 320" stroke="#2a4a6a" stroke-width="2" fill="none" opacity="0.5"/>
+          `
         },
         {
           id: 'bottom-shorts',
-          name: 'Shorts',
-          color: '#32CD32',
-          svg: `<path d="M 55 215 L 50 270 L 95 270 L 100 240 L 105 270 L 150 270 L 145 215 Z" fill="#32CD32"/>`
-        },
-        {
-          id: 'bottom-pants',
-          name: 'Pants',
-          color: '#2F2F2F',
-          svg: `<path d="M 55 215 L 55 340 L 92 340 L 97 250 L 103 250 L 108 340 L 145 340 L 145 215 Z" fill="#2F2F2F"/>`
+          name: 'Adventure Shorts',
+          color: '#5a5040',
+          svg: `
+            <defs>
+              <linearGradient id="adventureShorts" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#6a6050"/>
+                <stop offset="50%" style="stop-color:#5a5040"/>
+                <stop offset="100%" style="stop-color:#4a4030"/>
+              </linearGradient>
+            </defs>
+            <path d="M 60 218 L 55 275 L 92 278 L 97 250 L 103 250 L 108 278 L 145 275 L 140 218 Z" fill="url(#adventureShorts)"/>
+            <!-- Pocket detail -->
+            <path d="M 65 230 L 63 255 L 82 257 L 84 232 Z" stroke="#4a4030" stroke-width="1.5" fill="none"/>
+            <path d="M 118 232 L 116 257 L 137 255 L 135 230 Z" stroke="#4a4030" stroke-width="1.5" fill="none"/>
+            <!-- Belt loops -->
+            <rect x="70" y="218" width="5" height="10" fill="#4a4030"/>
+            <rect x="95" y="218" width="10" height="10" fill="#4a4030"/>
+            <rect x="125" y="218" width="5" height="10" fill="#4a4030"/>
+          `
         }
       ],
       shoes: [
@@ -425,42 +804,115 @@
           isRemove: true
         },
         {
-          id: 'shoes-sneakers',
-          name: 'Sneakers',
-          color: '#FFFFFF',
-          svg: `<ellipse cx="75" cy="342" rx="25" ry="10" fill="#FFFFFF"/>
-                <ellipse cx="125" cy="342" rx="25" ry="10" fill="#FFFFFF"/>
-                <rect x="55" y="335" width="40" height="8" rx="2" fill="#FFFFFF"/>
-                <rect x="105" y="335" width="40" height="8" rx="2" fill="#FFFFFF"/>
-                <line x1="60" y1="338" x2="70" y2="338" stroke="#1E90FF" stroke-width="2"/>
-                <line x1="110" y1="338" x2="120" y2="338" stroke="#1E90FF" stroke-width="2"/>`
+          id: 'shoes-travel-boots',
+          name: 'Travel Boots',
+          color: '#5a4030',
+          svg: `
+            <defs>
+              <linearGradient id="travelBoots" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#6a5040"/>
+                <stop offset="50%" style="stop-color:#5a4030"/>
+                <stop offset="100%" style="stop-color:#4a3020"/>
+              </linearGradient>
+            </defs>
+            <!-- Left boot -->
+            <path d="M 58 300 L 55 340 Q 53 348 60 350 L 92 350 Q 98 348 96 340 L 94 310 Q 92 300 88 298 L 62 298 Q 58 298 58 300 Z" fill="url(#travelBoots)"/>
+            <!-- Right boot -->
+            <path d="M 106 298 L 112 298 Q 116 298 118 300 L 120 340 Q 122 348 115 350 L 83 350" fill="url(#travelBoots)" opacity="0"/>
+            <path d="M 108 300 L 105 340 Q 103 348 110 350 L 142 350 Q 148 348 146 340 L 144 310 Q 142 300 138 298 L 112 298 Q 108 298 108 300 Z" fill="url(#travelBoots)"/>
+            <!-- Boot straps -->
+            <rect x="60" y="310" width="32" height="5" rx="1" fill="#3a2a1a"/>
+            <rect x="60" y="325" width="32" height="5" rx="1" fill="#3a2a1a"/>
+            <rect x="110" y="310" width="32" height="5" rx="1" fill="#3a2a1a"/>
+            <rect x="110" y="325" width="32" height="5" rx="1" fill="#3a2a1a"/>
+            <!-- Buckles -->
+            <rect x="72" y="308" width="8" height="8" rx="1" fill="#c0a060"/>
+            <rect x="72" y="323" width="8" height="8" rx="1" fill="#c0a060"/>
+            <rect x="122" y="308" width="8" height="8" rx="1" fill="#c0a060"/>
+            <rect x="122" y="323" width="8" height="8" rx="1" fill="#c0a060"/>
+          `
         },
         {
-          id: 'shoes-heels',
-          name: 'Heels',
-          color: '#DC143C',
-          svg: `<path d="M 55 335 L 50 340 L 80 345 L 95 340 L 95 335 Z" fill="#DC143C"/>
-                <path d="M 105 335 L 105 340 L 120 345 L 150 340 L 145 335 Z" fill="#DC143C"/>
-                <rect x="52" y="340" width="8" height="15" fill="#DC143C"/>
-                <rect x="140" y="340" width="8" height="15" fill="#DC143C"/>`
-        },
-        {
-          id: 'shoes-boots',
-          name: 'Boots',
-          color: '#8B4513',
-          svg: `<rect x="55" y="300" width="38" height="45" rx="3" fill="#8B4513"/>
-                <rect x="107" y="300" width="38" height="45" rx="3" fill="#8B4513"/>
-                <ellipse cx="74" cy="347" rx="22" ry="8" fill="#5D3A1A"/>
-                <ellipse cx="126" cy="347" rx="22" ry="8" fill="#5D3A1A"/>`
+          id: 'shoes-heeled-boots',
+          name: 'Noble Boots',
+          color: '#2a2a3a',
+          svg: `
+            <defs>
+              <linearGradient id="nobleBoots" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#3a3a4a"/>
+                <stop offset="50%" style="stop-color:#2a2a3a"/>
+                <stop offset="100%" style="stop-color:#1a1a2a"/>
+              </linearGradient>
+            </defs>
+            <!-- Left boot -->
+            <path d="M 60 295 L 55 340 L 50 342 Q 48 350 55 352 L 90 352 Q 96 350 94 342 L 92 295 Z" fill="url(#nobleBoots)"/>
+            <!-- Left heel -->
+            <rect x="50" y="348" width="12" height="10" rx="2" fill="#1a1a2a"/>
+            <!-- Right boot -->
+            <path d="M 108 295 L 106 342 Q 104 350 110 352 L 145 352 Q 152 350 150 342 L 145 340 L 140 295 Z" fill="url(#nobleBoots)"/>
+            <!-- Right heel -->
+            <rect x="138" y="348" width="12" height="10" rx="2" fill="#1a1a2a"/>
+            <!-- Decorative tops -->
+            <path d="M 60 295 Q 76 290 92 295" stroke="#6a5a7a" stroke-width="4" fill="none"/>
+            <path d="M 108 295 Q 124 290 140 295" stroke="#6a5a7a" stroke-width="4" fill="none"/>
+            <!-- Gold trim -->
+            <line x1="55" y1="320" x2="94" y2="320" stroke="#c0a060" stroke-width="2"/>
+            <line x1="106" y1="320" x2="145" y2="320" stroke="#c0a060" stroke-width="2"/>
+          `
         },
         {
           id: 'shoes-sandals',
-          name: 'Sandals',
-          color: '#DEB887',
-          svg: `<ellipse cx="75" cy="345" rx="22" ry="7" fill="#DEB887"/>
-                <ellipse cx="125" cy="345" rx="22" ry="7" fill="#DEB887"/>
-                <path d="M 60 345 Q 75 330 90 345" stroke="#8B7355" stroke-width="3" fill="none"/>
-                <path d="M 110 345 Q 125 330 140 345" stroke="#8B7355" stroke-width="3" fill="none"/>`
+          name: 'Scholar Sandals',
+          color: '#8a7060',
+          svg: `
+            <defs>
+              <linearGradient id="scholarSandals" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#9a8070"/>
+                <stop offset="50%" style="stop-color:#8a7060"/>
+                <stop offset="100%" style="stop-color:#7a6050"/>
+              </linearGradient>
+            </defs>
+            <!-- Sole platforms -->
+            <ellipse cx="75" cy="348" rx="22" ry="8" fill="url(#scholarSandals)"/>
+            <ellipse cx="125" cy="348" rx="22" ry="8" fill="url(#scholarSandals)"/>
+            <!-- Straps -->
+            <path d="M 55 345 Q 75 330 95 345" stroke="#6a5040" stroke-width="4" fill="none"/>
+            <path d="M 60 348 Q 75 338 90 348" stroke="#6a5040" stroke-width="3" fill="none"/>
+            <path d="M 105 345 Q 125 330 145 345" stroke="#6a5040" stroke-width="4" fill="none"/>
+            <path d="M 110 348 Q 125 338 140 348" stroke="#6a5040" stroke-width="3" fill="none"/>
+            <!-- Ankle straps -->
+            <path d="M 65 340 L 65 325 Q 75 320 85 325 L 85 340" stroke="#6a5040" stroke-width="3" fill="none"/>
+            <path d="M 115 340 L 115 325 Q 125 320 135 325 L 135 340" stroke="#6a5040" stroke-width="3" fill="none"/>
+          `
+        },
+        {
+          id: 'shoes-armored',
+          name: 'Armored Greaves',
+          color: '#6a6a7a',
+          svg: `
+            <defs>
+              <linearGradient id="armoredGreaves" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#8a8a9a"/>
+                <stop offset="50%" style="stop-color:#6a6a7a"/>
+                <stop offset="100%" style="stop-color:#4a4a5a"/>
+              </linearGradient>
+            </defs>
+            <!-- Left greave -->
+            <path d="M 55 290 L 50 340 Q 48 350 58 352 L 92 352 Q 100 350 98 340 L 95 290 Z" fill="url(#armoredGreaves)"/>
+            <!-- Right greave -->
+            <path d="M 105 290 L 102 340 Q 100 350 108 352 L 142 352 Q 150 350 148 340 L 145 290 Z" fill="url(#armoredGreaves)"/>
+            <!-- Armor plating -->
+            <path d="M 58 295 L 55 320 L 92 320 L 92 295" fill="#5a5a6a"/>
+            <path d="M 108 295 L 105 320 L 142 320 L 142 295" fill="#5a5a6a"/>
+            <!-- Gold accents -->
+            <line x1="55" y1="320" x2="92" y2="320" stroke="#c0a060" stroke-width="3"/>
+            <line x1="105" y1="320" x2="142" y2="320" stroke="#c0a060" stroke-width="3"/>
+            <!-- Knee guards -->
+            <ellipse cx="73" cy="295" rx="12" ry="8" fill="#8a8a9a"/>
+            <ellipse cx="123" cy="295" rx="12" ry="8" fill="#8a8a9a"/>
+            <circle cx="73" cy="295" r="4" fill="#c0a060"/>
+            <circle cx="123" cy="295" r="4" fill="#c0a060"/>
+          `
         }
       ],
       accessory: [
@@ -471,39 +923,136 @@
           isRemove: true
         },
         {
-          id: 'acc-necklace',
-          name: 'Necklace',
-          color: '#FFD700',
-          svg: `<path d="M 70 115 Q 100 140 130 115" stroke="#FFD700" stroke-width="3" fill="none"/>
-                <circle cx="100" cy="135" r="8" fill="#FFD700"/>
-                <circle cx="100" cy="135" r="4" fill="#FF6347"/>`
+          id: 'acc-magic-pendant',
+          name: 'Magic Pendant',
+          color: '#4a9ad0',
+          svg: `
+            <defs>
+              <radialGradient id="magicGem" cx="50%" cy="30%" r="60%">
+                <stop offset="0%" style="stop-color:#8ad0f0"/>
+                <stop offset="50%" style="stop-color:#4a9ad0"/>
+                <stop offset="100%" style="stop-color:#2a6aa0"/>
+              </radialGradient>
+            </defs>
+            <!-- Chain -->
+            <path d="M 75 108 Q 85 115 100 118 Q 115 115 125 108" stroke="#c0a060" stroke-width="2" fill="none"/>
+            <!-- Pendant setting -->
+            <path d="M 92 118 L 88 130 L 100 145 L 112 130 L 108 118" fill="#c0a060"/>
+            <!-- Gem -->
+            <path d="M 92 125 L 88 132 L 100 142 L 112 132 L 108 125 L 100 120 Z" fill="url(#magicGem)"/>
+            <!-- Gem highlight -->
+            <path d="M 96 124 L 94 128 L 100 125 Z" fill="#fff" opacity="0.6"/>
+            <!-- Magic glow effect -->
+            <ellipse cx="100" cy="132" rx="18" ry="15" fill="#4a9ad0" opacity="0.2"/>
+          `
         },
         {
-          id: 'acc-glasses',
-          name: 'Glasses',
-          color: '#333333',
-          svg: `<circle cx="80" cy="55" r="15" stroke="#333" stroke-width="3" fill="none"/>
-                <circle cx="120" cy="55" r="15" stroke="#333" stroke-width="3" fill="none"/>
-                <line x1="95" y1="55" x2="105" y2="55" stroke="#333" stroke-width="3"/>
-                <line x1="65" y1="55" x2="55" y2="50" stroke="#333" stroke-width="2"/>
-                <line x1="135" y1="55" x2="145" y2="50" stroke="#333" stroke-width="2"/>`
+          id: 'acc-circlet',
+          name: 'Royal Circlet',
+          color: '#d0a040',
+          svg: `
+            <defs>
+              <linearGradient id="royalGold" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#e0b050"/>
+                <stop offset="50%" style="stop-color:#d0a040"/>
+                <stop offset="100%" style="stop-color:#c09030"/>
+              </linearGradient>
+              <radialGradient id="rubyGem" cx="50%" cy="30%" r="60%">
+                <stop offset="0%" style="stop-color:#ff6080"/>
+                <stop offset="50%" style="stop-color:#d04060"/>
+                <stop offset="100%" style="stop-color:#a02040"/>
+              </radialGradient>
+            </defs>
+            <!-- Circlet band -->
+            <path d="M 58 35 Q 58 20 100 15 Q 142 20 142 35" stroke="url(#royalGold)" stroke-width="4" fill="none"/>
+            <!-- Center gem -->
+            <path d="M 95 18 L 92 25 L 100 32 L 108 25 L 105 18 L 100 15 Z" fill="url(#rubyGem)"/>
+            <!-- Side decorations -->
+            <circle cx="72" cy="28" r="4" fill="url(#royalGold)"/>
+            <circle cx="128" cy="28" r="4" fill="url(#royalGold)"/>
+            <!-- Gem highlights -->
+            <ellipse cx="98" cy="22" rx="2" ry="1.5" fill="#fff" opacity="0.7"/>
+          `
         },
         {
-          id: 'acc-watch',
-          name: 'Watch',
-          color: '#C0C0C0',
-          svg: `<rect x="25" y="195" width="20" height="25" rx="3" fill="#C0C0C0"/>
-                <rect x="28" y="198" width="14" height="14" fill="#000"/>
-                <circle cx="35" cy="205" r="5" fill="#1E90FF"/>`
+          id: 'acc-earrings-crystal',
+          name: 'Crystal Earrings',
+          color: '#a0d0f0',
+          svg: `
+            <defs>
+              <linearGradient id="crystalBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#c0e0f8"/>
+                <stop offset="50%" style="stop-color:#a0d0f0"/>
+                <stop offset="100%" style="stop-color:#70a0c0"/>
+              </linearGradient>
+            </defs>
+            <!-- Left earring -->
+            <circle cx="55" cy="68" r="3" fill="#c0a060"/>
+            <path d="M 52 72 L 48 90 L 55 95 L 62 90 L 58 72 Z" fill="url(#crystalBlue)"/>
+            <path d="M 53 75 L 51 82 L 55 78 Z" fill="#fff" opacity="0.5"/>
+            <!-- Right earring -->
+            <circle cx="145" cy="68" r="3" fill="#c0a060"/>
+            <path d="M 142 72 L 138 90 L 145 95 L 152 90 L 148 72 Z" fill="url(#crystalBlue)"/>
+            <path d="M 143 75 L 141 82 L 145 78 Z" fill="#fff" opacity="0.5"/>
+          `
         },
         {
-          id: 'acc-earrings',
-          name: 'Earrings',
-          color: '#FFD700',
-          svg: `<circle cx="52" cy="65" r="5" fill="#FFD700"/>
-                <circle cx="148" cy="65" r="5" fill="#FFD700"/>
-                <ellipse cx="52" cy="78" rx="3" ry="8" fill="#FFD700"/>
-                <ellipse cx="148" cy="78" rx="3" ry="8" fill="#FFD700"/>`
+          id: 'acc-belt-pouches',
+          name: 'Adventurer Belt',
+          color: '#6a4a2a',
+          svg: `
+            <defs>
+              <linearGradient id="leatherBeltAcc" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#7a5a3a"/>
+                <stop offset="50%" style="stop-color:#6a4a2a"/>
+                <stop offset="100%" style="stop-color:#5a3a1a"/>
+              </linearGradient>
+            </defs>
+            <!-- Main belt -->
+            <rect x="52" y="198" width="96" height="10" rx="2" fill="url(#leatherBeltAcc)"/>
+            <!-- Belt buckle -->
+            <rect x="94" y="195" width="12" height="16" rx="2" fill="#c0a060"/>
+            <rect x="97" y="198" width="6" height="10" rx="1" fill="#5a3a1a"/>
+            <!-- Left pouch -->
+            <path d="M 55 208 L 52 235 L 75 235 L 72 208 Z" fill="url(#leatherBeltAcc)"/>
+            <rect x="55" y="212" width="17" height="3" fill="#5a3a1a"/>
+            <circle cx="63" cy="220" r="2" fill="#c0a060"/>
+            <!-- Right pouch -->
+            <path d="M 128 208 L 125 235 L 148 235 L 145 208 Z" fill="url(#leatherBeltAcc)"/>
+            <rect x="128" y="212" width="17" height="3" fill="#5a3a1a"/>
+            <circle cx="137" cy="220" r="2" fill="#c0a060"/>
+            <!-- Hanging items -->
+            <ellipse cx="85" cy="225" rx="5" ry="8" fill="#3a5a3a" opacity="0.8"/>
+          `
+        },
+        {
+          id: 'acc-arm-bands',
+          name: 'Magic Arm Bands',
+          color: '#8040a0',
+          svg: `
+            <defs>
+              <linearGradient id="magicBands" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#a050c0"/>
+                <stop offset="50%" style="stop-color:#8040a0"/>
+                <stop offset="100%" style="stop-color:#603080"/>
+              </linearGradient>
+            </defs>
+            <!-- Left arm band -->
+            <ellipse cx="38" cy="185" rx="12" ry="8" fill="url(#magicBands)"/>
+            <ellipse cx="38" cy="185" rx="8" ry="5" fill="#603080"/>
+            <!-- Left runes -->
+            <path d="M 32 183 L 35 188 L 32 193" stroke="#c0a0e0" stroke-width="1" fill="none"/>
+            <circle cx="40" cy="185" r="2" fill="#c0a0e0"/>
+            <!-- Right arm band -->
+            <ellipse cx="162" cy="185" rx="12" ry="8" fill="url(#magicBands)"/>
+            <ellipse cx="162" cy="185" rx="8" ry="5" fill="#603080"/>
+            <!-- Right runes -->
+            <path d="M 168 183 L 165 188 L 168 193" stroke="#c0a0e0" stroke-width="1" fill="none"/>
+            <circle cx="160" cy="185" r="2" fill="#c0a0e0"/>
+            <!-- Glow effect -->
+            <ellipse cx="38" cy="185" rx="15" ry="10" fill="#8040a0" opacity="0.3"/>
+            <ellipse cx="162" cy="185" rx="15" ry="10" fill="#8040a0" opacity="0.3"/>
+          `
         }
       ],
       hat: [
@@ -514,42 +1063,131 @@
           isRemove: true
         },
         {
-          id: 'hat-cap',
-          name: 'Cap',
-          color: '#DC143C',
-          svg: `<ellipse cx="100" cy="25" rx="50" ry="20" fill="#DC143C"/>
-                <path d="M 50 25 Q 50 0 100 0 Q 150 0 150 25" fill="#DC143C"/>
-                <ellipse cx="145" cy="30" rx="25" ry="8" fill="#B01030"/>`
+          id: 'hat-hood',
+          name: 'Traveler Hood',
+          color: '#3a4a5a',
+          svg: `
+            <defs>
+              <linearGradient id="travelerHood" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#4a5a6a"/>
+                <stop offset="50%" style="stop-color:#3a4a5a"/>
+                <stop offset="100%" style="stop-color:#2a3a4a"/>
+              </linearGradient>
+            </defs>
+            <!-- Hood back -->
+            <path d="M 50 20 Q 40 40 42 80 Q 44 100 55 110 L 55 85 Q 60 50 100 40 Q 140 50 145 85 L 145 110 Q 156 100 158 80 Q 160 40 150 20 Q 130 0 100 -5 Q 70 0 50 20 Z" fill="url(#travelerHood)"/>
+            <!-- Hood shadow -->
+            <path d="M 60 30 Q 55 50 58 80 L 60 90 Q 70 60 100 52 Q 130 60 140 90 L 142 80 Q 145 50 140 30 Q 125 15 100 12 Q 75 15 60 30 Z" fill="#2a3a4a" opacity="0.3"/>
+            <!-- Hood edge -->
+            <path d="M 55 108 Q 100 95 145 108" stroke="#4a5a6a" stroke-width="5" fill="none"/>
+          `
         },
         {
-          id: 'hat-beanie',
-          name: 'Beanie',
-          color: '#4682B4',
-          svg: `<ellipse cx="100" cy="25" rx="52" ry="25" fill="#4682B4"/>
-                <path d="M 48 25 Q 48 -10 100 -15 Q 152 -10 152 25" fill="#4682B4"/>
-                <line x1="55" y1="20" x2="55" y2="35" stroke="#36648B" stroke-width="3"/>
-                <line x1="75" y1="15" x2="75" y2="35" stroke="#36648B" stroke-width="3"/>
-                <line x1="95" y1="12" x2="95" y2="35" stroke="#36648B" stroke-width="3"/>
-                <line x1="115" y1="12" x2="115" y2="35" stroke="#36648B" stroke-width="3"/>
-                <line x1="135" y1="15" x2="135" y2="35" stroke="#36648B" stroke-width="3"/>
-                <circle cx="100" cy="-15" r="10" fill="#4682B4"/>`
+          id: 'hat-mage-hat',
+          name: 'Mage Hat',
+          color: '#2a3a6a',
+          svg: `
+            <defs>
+              <linearGradient id="mageHat" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#3a4a7a"/>
+                <stop offset="50%" style="stop-color:#2a3a6a"/>
+                <stop offset="100%" style="stop-color:#1a2a5a"/>
+              </linearGradient>
+            </defs>
+            <!-- Hat brim -->
+            <ellipse cx="100" cy="25" rx="58" ry="15" fill="url(#mageHat)"/>
+            <!-- Hat cone -->
+            <path d="M 55 25 Q 52 10 70 -20 Q 90 -60 100 -80 Q 115 -50 120 -40 Q 145 5 145 25" fill="url(#mageHat)"/>
+            <!-- Hat band -->
+            <ellipse cx="100" cy="20" rx="48" ry="12" fill="#c0a060"/>
+            <ellipse cx="100" cy="20" rx="44" ry="10" fill="url(#mageHat)"/>
+            <!-- Star decoration -->
+            <path d="M 100 -55 L 103 -48 L 110 -48 L 105 -43 L 107 -36 L 100 -40 L 93 -36 L 95 -43 L 90 -48 L 97 -48 Z" fill="#e0d0a0"/>
+            <!-- Hat tip curl -->
+            <path d="M 100 -80 Q 115 -85 120 -75" stroke="url(#mageHat)" stroke-width="8" fill="none" stroke-linecap="round"/>
+          `
         },
         {
-          id: 'hat-tophat',
-          name: 'Top Hat',
-          color: '#1a1a1a',
-          svg: `<rect x="65" y="-30" width="70" height="60" fill="#1a1a1a"/>
-                <ellipse cx="100" cy="-30" rx="35" ry="10" fill="#1a1a1a"/>
-                <ellipse cx="100" cy="30" rx="55" ry="12" fill="#1a1a1a"/>
-                <rect x="70" y="15" width="60" height="8" fill="#8B0000"/>`
+          id: 'hat-crown',
+          name: 'Noble Crown',
+          color: '#d0a040',
+          svg: `
+            <defs>
+              <linearGradient id="nobleCrown" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#e0b050"/>
+                <stop offset="50%" style="stop-color:#d0a040"/>
+                <stop offset="100%" style="stop-color:#c09030"/>
+              </linearGradient>
+              <radialGradient id="crownGem" cx="50%" cy="30%" r="60%">
+                <stop offset="0%" style="stop-color:#ff8080"/>
+                <stop offset="50%" style="stop-color:#d04040"/>
+                <stop offset="100%" style="stop-color:#a02020"/>
+              </radialGradient>
+            </defs>
+            <!-- Crown base -->
+            <ellipse cx="100" cy="15" rx="48" ry="12" fill="url(#nobleCrown)"/>
+            <!-- Crown points -->
+            <path d="M 55 15 L 52 10 L 60 -5 L 68 10 L 75 -10 L 85 8 L 100 -15 L 115 8 L 125 -10 L 132 10 L 140 -5 L 148 10 L 145 15" fill="url(#nobleCrown)"/>
+            <!-- Central gem -->
+            <ellipse cx="100" cy="-5" rx="6" ry="7" fill="url(#crownGem)"/>
+            <ellipse cx="98" cy="-8" rx="2" ry="1.5" fill="#fff" opacity="0.6"/>
+            <!-- Side gems -->
+            <circle cx="75" cy="2" r="4" fill="#4080d0"/>
+            <circle cx="125" cy="2" r="4" fill="#4080d0"/>
+            <!-- Crown detail line -->
+            <path d="M 58 12 Q 100 8 142 12" stroke="#c09030" stroke-width="2" fill="none"/>
+          `
         },
         {
-          id: 'hat-bow',
-          name: 'Hair Bow',
-          color: '#FF69B4',
-          svg: `<ellipse cx="70" cy="15" rx="25" ry="15" fill="#FF69B4"/>
-                <ellipse cx="130" cy="15" rx="25" ry="15" fill="#FF69B4"/>
-                <circle cx="100" cy="15" r="10" fill="#FF1493"/>`
+          id: 'hat-ribbon',
+          name: 'Hair Ribbon',
+          color: '#c04060',
+          svg: `
+            <defs>
+              <linearGradient id="hairRibbon" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#d05070"/>
+                <stop offset="50%" style="stop-color:#c04060"/>
+                <stop offset="100%" style="stop-color:#a03050"/>
+              </linearGradient>
+            </defs>
+            <!-- Left bow loop -->
+            <ellipse cx="72" cy="15" rx="18" ry="12" fill="url(#hairRibbon)"/>
+            <!-- Right bow loop -->
+            <ellipse cx="128" cy="15" rx="18" ry="12" fill="url(#hairRibbon)"/>
+            <!-- Center knot -->
+            <ellipse cx="100" cy="18" rx="10" ry="8" fill="#a03050"/>
+            <!-- Ribbon tails -->
+            <path d="M 95 25 Q 88 40 85 55 Q 82 45 78 50" stroke="url(#hairRibbon)" stroke-width="8" fill="none" stroke-linecap="round"/>
+            <path d="M 105 25 Q 112 40 115 55 Q 118 45 122 50" stroke="url(#hairRibbon)" stroke-width="8" fill="none" stroke-linecap="round"/>
+            <!-- Bow details -->
+            <path d="M 62 12 Q 72 18 82 12" stroke="#a03050" stroke-width="1.5" fill="none"/>
+            <path d="M 118 12 Q 128 18 138 12" stroke="#a03050" stroke-width="1.5" fill="none"/>
+          `
+        },
+        {
+          id: 'hat-veil',
+          name: 'Mystic Veil',
+          color: '#d0c0e0',
+          svg: `
+            <defs>
+              <linearGradient id="mysticVeil" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#e0d0f0"/>
+                <stop offset="50%" style="stop-color:#d0c0e0"/>
+                <stop offset="100%" style="stop-color:#c0b0d0"/>
+              </linearGradient>
+            </defs>
+            <!-- Veil headpiece -->
+            <path d="M 55 25 Q 55 10 100 5 Q 145 10 145 25" stroke="#c0a0d0" stroke-width="4" fill="none"/>
+            <!-- Central ornament -->
+            <circle cx="100" cy="12" r="6" fill="#a080c0"/>
+            <circle cx="100" cy="12" r="3" fill="#d0c0e0"/>
+            <!-- Sheer veil flowing down -->
+            <path d="M 55 25 Q 45 60 50 100 Q 52 130 55 150" stroke="url(#mysticVeil)" stroke-width="12" fill="none" opacity="0.6"/>
+            <path d="M 145 25 Q 155 60 150 100 Q 148 130 145 150" stroke="url(#mysticVeil)" stroke-width="12" fill="none" opacity="0.6"/>
+            <!-- Veil shimmer -->
+            <path d="M 48 80 L 52 85 L 48 90" stroke="#fff" stroke-width="1" fill="none" opacity="0.4"/>
+            <path d="M 152 80 L 148 85 L 152 90" stroke="#fff" stroke-width="1" fill="none" opacity="0.4"/>
+          `
         }
       ]
     };
@@ -595,8 +1233,8 @@
 
           if (item.isRemove) {
             itemBtn.innerHTML = `<svg viewBox="0 0 50 50">
-              <line x1="15" y1="15" x2="35" y2="35" stroke="#ff6b6b" stroke-width="4" stroke-linecap="round"/>
-              <line x1="35" y1="15" x2="15" y2="35" stroke="#ff6b6b" stroke-width="4" stroke-linecap="round"/>
+              <line x1="15" y1="15" x2="35" y2="35" stroke="#8b2942" stroke-width="4" stroke-linecap="round"/>
+              <line x1="35" y1="15" x2="15" y2="35" stroke="#8b2942" stroke-width="4" stroke-linecap="round"/>
             </svg>`;
           } else {
             // Create a preview thumbnail
@@ -633,7 +1271,7 @@
     // Select an item
     function selectItem(category, item) {
       const slot = document.querySelector(`.slot-${category}`);
-      
+
       if (item.isRemove || !item.svg) {
         slot.innerHTML = '';
         currentOutfit[category] = null;
@@ -660,7 +1298,7 @@
         const slot = document.querySelector(`.slot-${category}`);
         slot.innerHTML = '';
         currentOutfit[category] = null;
-        
+
         // Clear selection UI
         const categoryContainer = document.getElementById(`category-${category}`);
         if (categoryContainer) {
