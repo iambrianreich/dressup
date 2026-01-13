@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 350">
+  <defs>
+    <linearGradient id="speakerRobe" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#5a9ac0"/>
+      <stop offset="50%" style="stop-color:#4a8ab0"/>
+      <stop offset="100%" style="stop-color:#3a7aa0"/>
+    </linearGradient>
+    <linearGradient id="robeAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8d5b7"/>
+      <stop offset="100%" style="stop-color:#d4c0a0"/>
+    </linearGradient>
+  </defs>
+  <!-- Main robe body extending to dress length -->
+  <path d="M 65 125 Q 55 135 52 155 L 45 280 L 155 280 L 148 155 Q 145 135 135 125 L 118 122 Q 100 130 82 122 Z" fill="url(#speakerRobe)"/>
+  <!-- Gold trim at neckline -->
+  <path d="M 82 122 Q 100 135 118 122" stroke="url(#robeAccent)" stroke-width="4" fill="none"/>
+  <!-- Decorative patterns -->
+  <path d="M 75 150 L 75 260" stroke="url(#robeAccent)" stroke-width="2" opacity="0.6"/>
+  <path d="M 125 150 L 125 260" stroke="url(#robeAccent)" stroke-width="2" opacity="0.6"/>
+  <!-- Sleeves -->
+  <path d="M 52 140 Q 35 150 28 180 L 25 215 Q 22 225 28 228 L 42 228 Q 48 225 46 215 L 50 175 Q 52 160 55 150" fill="url(#speakerRobe)"/>
+  <path d="M 148 140 Q 165 150 172 180 L 175 215 Q 178 225 172 228 L 158 228 Q 152 225 154 215 L 150 175 Q 148 160 145 150" fill="url(#speakerRobe)"/>
+  <!-- Sleeve trim -->
+  <path d="M 25 218 Q 35 222 46 218" stroke="url(#robeAccent)" stroke-width="3" fill="none"/>
+  <path d="M 154 218 Q 165 222 175 218" stroke="url(#robeAccent)" stroke-width="3" fill="none"/>
+  <!-- Hem decoration -->
+  <path d="M 45 275 L 155 275" stroke="url(#robeAccent)" stroke-width="4"/>
+  <circle cx="100" cy="145" r="5" fill="url(#robeAccent)"/>
+</svg>

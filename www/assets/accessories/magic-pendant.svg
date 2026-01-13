@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 350">
+  <defs>
+    <radialGradient id="magicGem" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" style="stop-color:#8ad0f0"/>
+      <stop offset="50%" style="stop-color:#4a9ad0"/>
+      <stop offset="100%" style="stop-color:#2a6aa0"/>
+    </radialGradient>
+  </defs>
+  <!-- Chain -->
+  <path d="M 75 108 Q 85 115 100 118 Q 115 115 125 108" stroke="#c0a060" stroke-width="2" fill="none"/>
+  <!-- Pendant setting -->
+  <path d="M 92 118 L 88 130 L 100 145 L 112 130 L 108 118" fill="#c0a060"/>
+  <!-- Gem -->
+  <path d="M 92 125 L 88 132 L 100 142 L 112 132 L 108 125 L 100 120 Z" fill="url(#magicGem)"/>
+  <!-- Gem highlight -->
+  <path d="M 96 124 L 94 128 L 100 125 Z" fill="#fff" opacity="0.6"/>
+  <!-- Magic glow effect -->
+  <ellipse cx="100" cy="132" rx="18" ry="15" fill="#4a9ad0" opacity="0.2"/>
+</svg>

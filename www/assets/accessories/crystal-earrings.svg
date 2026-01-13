@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 350">
+  <defs>
+    <linearGradient id="crystalBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c0e0f8"/>
+      <stop offset="50%" style="stop-color:#a0d0f0"/>
+      <stop offset="100%" style="stop-color:#70a0c0"/>
+    </linearGradient>
+  </defs>
+  <!-- Left earring -->
+  <circle cx="55" cy="68" r="3" fill="#c0a060"/>
+  <path d="M 52 72 L 48 90 L 55 95 L 62 90 L 58 72 Z" fill="url(#crystalBlue)"/>
+  <path d="M 53 75 L 51 82 L 55 78 Z" fill="#fff" opacity="0.5"/>
+  <!-- Right earring -->
+  <circle cx="145" cy="68" r="3" fill="#c0a060"/>
+  <path d="M 142 72 L 138 90 L 145 95 L 152 90 L 148 72 Z" fill="url(#crystalBlue)"/>
+  <path d="M 143 75 L 141 82 L 145 78 Z" fill="#fff" opacity="0.5"/>
+</svg>

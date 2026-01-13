@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 350">
+  <defs>
+    <linearGradient id="travelerHood" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a5a6a"/>
+      <stop offset="50%" style="stop-color:#3a4a5a"/>
+      <stop offset="100%" style="stop-color:#2a3a4a"/>
+    </linearGradient>
+  </defs>
+  <!-- Hood back -->
+  <path d="M 50 20 Q 40 40 42 80 Q 44 100 55 110 L 55 85 Q 60 50 100 40 Q 140 50 145 85 L 145 110 Q 156 100 158 80 Q 160 40 150 20 Q 130 0 100 -5 Q 70 0 50 20 Z" fill="url(#travelerHood)"/>
+  <!-- Hood shadow -->
+  <path d="M 60 30 Q 55 50 58 80 L 60 90 Q 70 60 100 52 Q 130 60 140 90 L 142 80 Q 145 50 140 30 Q 125 15 100 12 Q 75 15 60 30 Z" fill="#2a3a4a" opacity="0.3"/>
+  <!-- Hood edge -->
+  <path d="M 55 108 Q 100 95 145 108" stroke="#4a5a6a" stroke-width="5" fill="none"/>
+</svg>

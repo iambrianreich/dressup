@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 350">
+  <defs>
+    <linearGradient id="leatherBeltAcc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7a5a3a"/>
+      <stop offset="50%" style="stop-color:#6a4a2a"/>
+      <stop offset="100%" style="stop-color:#5a3a1a"/>
+    </linearGradient>
+  </defs>
+  <!-- Main belt -->
+  <rect x="52" y="198" width="96" height="10" rx="2" fill="url(#leatherBeltAcc)"/>
+  <!-- Belt buckle -->
+  <rect x="94" y="195" width="12" height="16" rx="2" fill="#c0a060"/>
+  <rect x="97" y="198" width="6" height="10" rx="1" fill="#5a3a1a"/>
+  <!-- Left pouch -->
+  <path d="M 55 208 L 52 235 L 75 235 L 72 208 Z" fill="url(#leatherBeltAcc)"/>
+  <rect x="55" y="212" width="17" height="3" fill="#5a3a1a"/>
+  <circle cx="63" cy="220" r="2" fill="#c0a060"/>
+  <!-- Right pouch -->
+  <path d="M 128 208 L 125 235 L 148 235 L 145 208 Z" fill="url(#leatherBeltAcc)"/>
+  <rect x="128" y="212" width="17" height="3" fill="#5a3a1a"/>
+  <circle cx="137" cy="220" r="2" fill="#c0a060"/>
+  <!-- Hanging items -->
+  <ellipse cx="85" cy="225" rx="5" ry="8" fill="#3a5a3a" opacity="0.8"/>
+</svg>

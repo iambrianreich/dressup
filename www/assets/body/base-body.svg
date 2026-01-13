@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 350">
+  <defs>
+    <!-- Skin gradient for depth -->
+    <linearGradient id="skinGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fce4d6"/>
+      <stop offset="50%" style="stop-color:#f5d5c8"/>
+      <stop offset="100%" style="stop-color:#e8c4b8"/>
+    </linearGradient>
+    <!-- Shadow for depth -->
+    <linearGradient id="skinShadow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e8c4b8"/>
+      <stop offset="100%" style="stop-color:#f5d5c8"/>
+    </linearGradient>
+    <!-- Eye gradient -->
+    <radialGradient id="eyeGradient" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" style="stop-color:#5ba3d9"/>
+      <stop offset="70%" style="stop-color:#2d5a87"/>
+      <stop offset="100%" style="stop-color:#1a3a5c"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Neck -->
+  <path d="M 88 100 L 88 130 Q 88 135 93 135 L 107 135 Q 112 135 112 130 L 112 100" fill="url(#skinGradient)"/>
+  <path d="M 88 100 L 88 120 L 92 120 L 92 100" fill="url(#skinShadow)" opacity="0.3"/>
+
+  <!-- Body/Torso - slender anime proportions -->
+  <path d="M 70 130 Q 60 140 58 160 L 55 220 Q 55 230 65 235 L 95 240 L 100 242 L 105 240 L 135 235 Q 145 230 145 220 L 142 160 Q 140 140 130 130 L 112 128 L 100 130 L 88 128 Z" fill="url(#skinGradient)"/>
+
+  <!-- Arms - slender -->
+  <path d="M 58 140 Q 40 145 35 170 L 30 220 Q 28 230 32 232 L 38 232 Q 42 230 44 220 L 52 170 Q 54 155 58 145" fill="url(#skinGradient)"/>
+  <path d="M 142 140 Q 160 145 165 170 L 170 220 Q 172 230 168 232 L 162 232 Q 158 230 156 220 L 148 170 Q 146 155 142 145" fill="url(#skinGradient)"/>
+
+  <!-- Hands -->
+  <ellipse cx="35" cy="235" rx="8" ry="10" fill="url(#skinGradient)"/>
+  <ellipse cx="165" cy="235" rx="8" ry="10" fill="url(#skinGradient)"/>
+
+  <!-- Legs -->
+  <path d="M 65 235 L 60 320 Q 58 335 65 340 L 85 340 Q 92 335 90 320 L 95 240" fill="url(#skinGradient)"/>
+  <path d="M 135 235 L 140 320 Q 142 335 135 340 L 115 340 Q 108 335 110 320 L 105 240" fill="url(#skinGradient)"/>
+
+  <!-- Head - larger anime proportions -->
+  <ellipse cx="100" cy="58" rx="42" ry="48" fill="url(#skinGradient)"/>
+
+  <!-- Face shadow -->
+  <ellipse cx="100" cy="62" rx="38" ry="42" fill="url(#skinShadow)" opacity="0.1"/>
+
+  <!-- Ears -->
+  <ellipse cx="58" cy="60" rx="5" ry="8" fill="url(#skinGradient)"/>
+  <ellipse cx="142" cy="60" rx="5" ry="8" fill="url(#skinGradient)"/>
+
+  <!-- Eyes - Large anime style -->
+  <!-- Left eye -->
+  <ellipse cx="78" cy="55" rx="14" ry="16" fill="#fff"/>
+  <ellipse cx="80" cy="56" rx="11" ry="13" fill="url(#eyeGradient)"/>
+  <ellipse cx="80" cy="56" rx="6" ry="7" fill="#1a2a3a"/>
+  <ellipse cx="83" cy="52" rx="4" ry="3" fill="#fff"/>
+  <ellipse cx="77" cy="59" rx="2" ry="1.5" fill="#fff" opacity="0.7"/>
+  <path d="M 64 48 Q 78 44 92 50" stroke="#3a2820" stroke-width="2" fill="none"/>
+
+  <!-- Right eye -->
+  <ellipse cx="122" cy="55" rx="14" ry="16" fill="#fff"/>
+  <ellipse cx="120" cy="56" rx="11" ry="13" fill="url(#eyeGradient)"/>
+  <ellipse cx="120" cy="56" rx="6" ry="7" fill="#1a2a3a"/>
+  <ellipse cx="123" cy="52" rx="4" ry="3" fill="#fff"/>
+  <ellipse cx="117" cy="59" rx="2" ry="1.5" fill="#fff" opacity="0.7"/>
+  <path d="M 108 50 Q 122 44 136 48" stroke="#3a2820" stroke-width="2" fill="none"/>
+
+  <!-- Eyelashes -->
+  <path d="M 64 50 L 62 46" stroke="#3a2820" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M 67 48 L 64 44" stroke="#3a2820" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M 136 50 L 138 46" stroke="#3a2820" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M 133 48 L 136 44" stroke="#3a2820" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Eyebrows -->
+  <path d="M 66 40 Q 78 36 90 40" stroke="#5a4030" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M 110 40 Q 122 36 134 40" stroke="#5a4030" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Nose - subtle anime style -->
+  <path d="M 100 65 L 98 75 Q 100 78 102 75" stroke="#d4a89a" stroke-width="1.5" fill="none"/>
+
+  <!-- Mouth - small anime style -->
+  <path d="M 92 88 Q 100 93 108 88" stroke="#c4756a" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 96 86 Q 100 84 104 86" stroke="#e8a090" stroke-width="1" fill="none"/>
+
+  <!-- Blush marks -->
+  <ellipse cx="70" cy="72" rx="8" ry="4" fill="#e8a8a0" opacity="0.4"/>
+  <ellipse cx="130" cy="72" rx="8" ry="4" fill="#e8a8a0" opacity="0.4"/>
+</svg>

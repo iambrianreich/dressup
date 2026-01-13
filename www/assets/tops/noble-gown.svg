@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 350">
+  <defs>
+    <linearGradient id="nobleDress" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8a3a5a"/>
+      <stop offset="50%" style="stop-color:#6a2a4a"/>
+      <stop offset="100%" style="stop-color:#5a1a3a"/>
+    </linearGradient>
+    <linearGradient id="goldTrim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4a860"/>
+      <stop offset="100%" style="stop-color:#b08040"/>
+    </linearGradient>
+  </defs>
+  <!-- Bodice -->
+  <path d="M 65 125 Q 58 135 55 150 L 55 200 L 145 200 L 145 150 Q 142 135 135 125 L 115 120 Q 100 128 85 120 Z" fill="url(#nobleDress)"/>
+  <!-- Full skirt -->
+  <path d="M 55 198 Q 40 220 35 280 L 165 280 Q 160 220 145 198 Z" fill="url(#nobleDress)"/>
+  <!-- Corset lacing -->
+  <line x1="100" y1="135" x2="100" y2="195" stroke="url(#goldTrim)" stroke-width="2"/>
+  <path d="M 92 145 L 100 150 L 108 145" stroke="url(#goldTrim)" stroke-width="1.5" fill="none"/>
+  <path d="M 92 160 L 100 165 L 108 160" stroke="url(#goldTrim)" stroke-width="1.5" fill="none"/>
+  <path d="M 92 175 L 100 180 L 108 175" stroke="url(#goldTrim)" stroke-width="1.5" fill="none"/>
+  <!-- Neckline decoration -->
+  <path d="M 85 120 Q 100 130 115 120" stroke="url(#goldTrim)" stroke-width="3" fill="none"/>
+  <circle cx="100" cy="128" r="4" fill="url(#goldTrim)"/>
+  <!-- Puffed sleeves -->
+  <ellipse cx="48" cy="145" rx="18" ry="22" fill="url(#nobleDress)"/>
+  <ellipse cx="152" cy="145" rx="18" ry="22" fill="url(#nobleDress)"/>
+  <!-- Sleeve cuffs -->
+  <ellipse cx="38" cy="175" rx="10" ry="8" fill="url(#goldTrim)" opacity="0.8"/>
+  <ellipse cx="162" cy="175" rx="10" ry="8" fill="url(#goldTrim)" opacity="0.8"/>
+  <!-- Skirt decoration -->
+  <path d="M 40 270 Q 100 285 160 270" stroke="url(#goldTrim)" stroke-width="3" fill="none"/>
+</svg>

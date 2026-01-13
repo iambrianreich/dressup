@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 350">
+  <defs>
+    <linearGradient id="adventureShorts" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6a6050"/>
+      <stop offset="50%" style="stop-color:#5a5040"/>
+      <stop offset="100%" style="stop-color:#4a4030"/>
+    </linearGradient>
+  </defs>
+  <path d="M 60 218 L 55 275 L 92 278 L 97 250 L 103 250 L 108 278 L 145 275 L 140 218 Z" fill="url(#adventureShorts)"/>
+  <!-- Pocket detail -->
+  <path d="M 65 230 L 63 255 L 82 257 L 84 232 Z" stroke="#4a4030" stroke-width="1.5" fill="none"/>
+  <path d="M 118 232 L 116 257 L 137 255 L 135 230 Z" stroke="#4a4030" stroke-width="1.5" fill="none"/>
+  <!-- Belt loops -->
+  <rect x="70" y="218" width="5" height="10" fill="#4a4030"/>
+  <rect x="95" y="218" width="10" height="10" fill="#4a4030"/>
+  <rect x="125" y="218" width="5" height="10" fill="#4a4030"/>
+</svg>

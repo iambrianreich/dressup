@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 350">
+  <defs>
+    <linearGradient id="flowingSkirt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a6a8a"/>
+      <stop offset="50%" style="stop-color:#3a5a7a"/>
+      <stop offset="100%" style="stop-color:#2a4a6a"/>
+    </linearGradient>
+  </defs>
+  <!-- Flowing elegant skirt -->
+  <path d="M 55 218 Q 50 250 45 300 Q 42 320 50 335 Q 70 345 100 348 Q 130 345 150 335 Q 158 320 155 300 Q 150 250 145 218 Z" fill="url(#flowingSkirt)"/>
+  <!-- Fabric folds -->
+  <path d="M 60 225 Q 55 270 58 320" stroke="#2a4a6a" stroke-width="2" fill="none" opacity="0.5"/>
+  <path d="M 80 222 Q 75 280 82 340" stroke="#2a4a6a" stroke-width="2" fill="none" opacity="0.5"/>
+  <path d="M 100 220 Q 100 280 100 345" stroke="#2a4a6a" stroke-width="2" fill="none" opacity="0.5"/>
+  <path d="M 120 222 Q 125 280 118 340" stroke="#2a4a6a" stroke-width="2" fill="none" opacity="0.5"/>
+  <path d="M 140 225 Q 145 270 142 320" stroke="#2a4a6a" stroke-width="2" fill="none" opacity="0.5"/>
+</svg>

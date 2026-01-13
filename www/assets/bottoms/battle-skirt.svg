@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 350">
+  <defs>
+    <linearGradient id="battleSkirt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6a3a3a"/>
+      <stop offset="50%" style="stop-color:#5a2a2a"/>
+      <stop offset="100%" style="stop-color:#4a1a1a"/>
+    </linearGradient>
+    <linearGradient id="metalPlate" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8a8a8a"/>
+      <stop offset="100%" style="stop-color:#5a5a5a"/>
+    </linearGradient>
+  </defs>
+  <!-- Layered armor skirt -->
+  <path d="M 55 218 L 45 290 L 70 295 L 75 260 L 85 295 L 100 298 L 115 295 L 125 260 L 130 295 L 155 290 L 145 218 Z" fill="url(#battleSkirt)"/>
+  <!-- Metal plates -->
+  <path d="M 65 225 L 60 265 L 80 268 L 82 230 Z" fill="url(#metalPlate)" opacity="0.7"/>
+  <path d="M 95 228 L 92 272 L 108 272 L 105 228 Z" fill="url(#metalPlate)" opacity="0.7"/>
+  <path d="M 118 230 L 120 268 L 140 265 L 135 225 Z" fill="url(#metalPlate)" opacity="0.7"/>
+  <!-- Decorative studs -->
+  <circle cx="70" cy="235" r="3" fill="#c0a060"/>
+  <circle cx="100" cy="238" r="3" fill="#c0a060"/>
+  <circle cx="130" cy="235" r="3" fill="#c0a060"/>
+</svg>

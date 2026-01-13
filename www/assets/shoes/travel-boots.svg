@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 350">
+  <defs>
+    <linearGradient id="travelBoots" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6a5040"/>
+      <stop offset="50%" style="stop-color:#5a4030"/>
+      <stop offset="100%" style="stop-color:#4a3020"/>
+    </linearGradient>
+  </defs>
+  <!-- Left boot -->
+  <path d="M 58 300 L 55 340 Q 53 348 60 350 L 92 350 Q 98 348 96 340 L 94 310 Q 92 300 88 298 L 62 298 Q 58 298 58 300 Z" fill="url(#travelBoots)"/>
+  <!-- Right boot -->
+  <path d="M 108 300 L 105 340 Q 103 348 110 350 L 142 350 Q 148 348 146 340 L 144 310 Q 142 300 138 298 L 112 298 Q 108 298 108 300 Z" fill="url(#travelBoots)"/>
+  <!-- Boot straps -->
+  <rect x="60" y="310" width="32" height="5" rx="1" fill="#3a2a1a"/>
+  <rect x="60" y="325" width="32" height="5" rx="1" fill="#3a2a1a"/>
+  <rect x="110" y="310" width="32" height="5" rx="1" fill="#3a2a1a"/>
+  <rect x="110" y="325" width="32" height="5" rx="1" fill="#3a2a1a"/>
+  <!-- Buckles -->
+  <rect x="72" y="308" width="8" height="8" rx="1" fill="#c0a060"/>
+  <rect x="72" y="323" width="8" height="8" rx="1" fill="#c0a060"/>
+  <rect x="122" y="308" width="8" height="8" rx="1" fill="#c0a060"/>
+  <rect x="122" y="323" width="8" height="8" rx="1" fill="#c0a060"/>
+</svg>

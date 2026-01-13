@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 350">
+  <defs>
+    <linearGradient id="scholarSandals" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9a8070"/>
+      <stop offset="50%" style="stop-color:#8a7060"/>
+      <stop offset="100%" style="stop-color:#7a6050"/>
+    </linearGradient>
+  </defs>
+  <!-- Sole platforms -->
+  <ellipse cx="75" cy="348" rx="22" ry="8" fill="url(#scholarSandals)"/>
+  <ellipse cx="125" cy="348" rx="22" ry="8" fill="url(#scholarSandals)"/>
+  <!-- Straps -->
+  <path d="M 55 345 Q 75 330 95 345" stroke="#6a5040" stroke-width="4" fill="none"/>
+  <path d="M 60 348 Q 75 338 90 348" stroke="#6a5040" stroke-width="3" fill="none"/>
+  <path d="M 105 345 Q 125 330 145 345" stroke="#6a5040" stroke-width="4" fill="none"/>
+  <path d="M 110 348 Q 125 338 140 348" stroke="#6a5040" stroke-width="3" fill="none"/>
+  <!-- Ankle straps -->
+  <path d="M 65 340 L 65 325 Q 75 320 85 325 L 85 340" stroke="#6a5040" stroke-width="3" fill="none"/>
+  <path d="M 115 340 L 115 325 Q 125 320 135 325 L 135 340" stroke="#6a5040" stroke-width="3" fill="none"/>
+</svg>

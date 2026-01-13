@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 350">
+  <defs>
+    <linearGradient id="hunterTunic" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a4a4a"/>
+      <stop offset="50%" style="stop-color:#3a3a3a"/>
+      <stop offset="100%" style="stop-color:#2a2a2a"/>
+    </linearGradient>
+    <linearGradient id="leatherBrown" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5a3a"/>
+      <stop offset="100%" style="stop-color:#6a4a2a"/>
+    </linearGradient>
+  </defs>
+  <!-- Main tunic -->
+  <path d="M 62 125 Q 55 135 52 150 L 52 225 L 148 225 L 148 150 Q 145 135 138 125 L 120 120 L 112 128 L 88 128 L 80 120 Z" fill="url(#hunterTunic)"/>
+  <!-- Collar -->
+  <path d="M 80 120 L 88 135 L 100 140 L 112 135 L 120 120" stroke="#5a5a5a" stroke-width="3" fill="none"/>
+  <!-- Belt -->
+  <rect x="52" y="195" width="96" height="12" fill="url(#leatherBrown)"/>
+  <rect x="95" y="192" width="10" height="18" rx="2" fill="#c4a060"/>
+  <!-- Sleeves -->
+  <path d="M 52 135 Q 35 145 30 175 L 28 210 Q 26 218 32 220 L 44 220 Q 50 218 48 210 L 50 175 Q 52 155 55 145" fill="url(#hunterTunic)"/>
+  <path d="M 148 135 Q 165 145 170 175 L 172 210 Q 174 218 168 220 L 156 220 Q 150 218 152 210 L 150 175 Q 148 155 145 145" fill="url(#hunterTunic)"/>
+  <!-- Arm guards -->
+  <rect x="28" y="185" width="20" height="25" rx="3" fill="url(#leatherBrown)"/>
+  <rect x="152" y="185" width="20" height="25" rx="3" fill="url(#leatherBrown)"/>
+</svg>

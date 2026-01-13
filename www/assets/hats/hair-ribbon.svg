@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 350">
+  <defs>
+    <linearGradient id="hairRibbon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d05070"/>
+      <stop offset="50%" style="stop-color:#c04060"/>
+      <stop offset="100%" style="stop-color:#a03050"/>
+    </linearGradient>
+  </defs>
+  <!-- Left bow loop -->
+  <ellipse cx="72" cy="15" rx="18" ry="12" fill="url(#hairRibbon)"/>
+  <!-- Right bow loop -->
+  <ellipse cx="128" cy="15" rx="18" ry="12" fill="url(#hairRibbon)"/>
+  <!-- Center knot -->
+  <ellipse cx="100" cy="18" rx="10" ry="8" fill="#a03050"/>
+  <!-- Ribbon tails -->
+  <path d="M 95 25 Q 88 40 85 55 Q 82 45 78 50" stroke="url(#hairRibbon)" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M 105 25 Q 112 40 115 55 Q 118 45 122 50" stroke="url(#hairRibbon)" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <!-- Bow details -->
+  <path d="M 62 12 Q 72 18 82 12" stroke="#a03050" stroke-width="1.5" fill="none"/>
+  <path d="M 118 12 Q 128 18 138 12" stroke="#a03050" stroke-width="1.5" fill="none"/>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 350">
+  <defs>
+    <linearGradient id="travelerPants" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#5a4a3a"/>
+      <stop offset="50%" style="stop-color:#4a3a2a"/>
+      <stop offset="100%" style="stop-color:#3a2a1a"/>
+    </linearGradient>
+  </defs>
+  <path d="M 60 220 L 58 335 Q 58 340 65 340 L 90 340 Q 95 338 95 332 L 98 255 L 102 255 L 105 332 Q 105 338 110 340 L 135 340 Q 142 340 142 335 L 140 220 Z" fill="url(#travelerPants)"/>
+  <!-- Stitching details -->
+  <line x1="75" y1="235" x2="75" y2="330" stroke="#3a2a1a" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="125" y1="235" x2="125" y2="330" stroke="#3a2a1a" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <!-- Knee patches -->
+  <ellipse cx="75" cy="280" rx="10" ry="15" fill="#5a4a3a" opacity="0.5"/>
+  <ellipse cx="125" cy="280" rx="10" ry="15" fill="#5a4a3a" opacity="0.5"/>
+</svg>

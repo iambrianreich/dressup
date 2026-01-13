@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 350">
+  <defs>
+    <linearGradient id="goldHair" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e4b070"/>
+      <stop offset="50%" style="stop-color:#d4a060"/>
+      <stop offset="100%" style="stop-color:#c49050"/>
+    </linearGradient>
+  </defs>
+  <!-- Main volume -->
+  <ellipse cx="100" cy="30" rx="47" ry="35" fill="url(#goldHair)"/>
+  <!-- Side volume -->
+  <path d="M 55 45 Q 52 60 54 80" stroke="url(#goldHair)" stroke-width="14" fill="none" stroke-linecap="round"/>
+  <path d="M 145 45 Q 148 60 146 80" stroke="url(#goldHair)" stroke-width="14" fill="none" stroke-linecap="round"/>
+  <!-- Braid going over shoulder -->
+  <path d="M 145 70 Q 160 90 155 120 Q 150 150 160 180 Q 165 210 155 240" stroke="url(#goldHair)" stroke-width="16" fill="none" stroke-linecap="round"/>
+  <!-- Braid pattern -->
+  <path d="M 152 95 Q 158 95 160 100 Q 158 105 152 105" stroke="#c49050" stroke-width="2" fill="none"/>
+  <path d="M 150 115 Q 156 115 158 120 Q 156 125 150 125" stroke="#c49050" stroke-width="2" fill="none"/>
+  <path d="M 152 135 Q 158 135 160 140 Q 158 145 152 145" stroke="#c49050" stroke-width="2" fill="none"/>
+  <path d="M 155 155 Q 161 155 163 160 Q 161 165 155 165" stroke="#c49050" stroke-width="2" fill="none"/>
+  <path d="M 158 175 Q 164 175 166 180 Q 164 185 158 185" stroke="#c49050" stroke-width="2" fill="none"/>
+  <!-- Bangs -->
+  <path d="M 68 32 Q 72 52 70 62" stroke="url(#goldHair)" stroke-width="11" fill="none" stroke-linecap="round"/>
+  <path d="M 88 28 Q 85 48 82 58" stroke="url(#goldHair)" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <path d="M 112 28 Q 115 48 118 58" stroke="url(#goldHair)" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <path d="M 132 32 Q 128 52 130 62" stroke="url(#goldHair)" stroke-width="11" fill="none" stroke-linecap="round"/>
+  <!-- Hair ribbon -->
+  <ellipse cx="155" cy="245" rx="10" ry="6" fill="#8b2942"/>
+</svg>

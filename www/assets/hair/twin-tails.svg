@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 350">
+  <defs>
+    <linearGradient id="pinkHair" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d46a8a"/>
+      <stop offset="50%" style="stop-color:#c44a6a"/>
+      <stop offset="100%" style="stop-color:#a43a5a"/>
+    </linearGradient>
+  </defs>
+  <!-- Main volume -->
+  <ellipse cx="100" cy="30" rx="46" ry="34" fill="url(#pinkHair)"/>
+  <!-- Twin tails -->
+  <ellipse cx="45" cy="50" rx="12" ry="15" fill="url(#pinkHair)"/>
+  <path d="M 45 65 Q 35 120 40 180 Q 42 220 50 260" stroke="url(#pinkHair)" stroke-width="20" fill="none" stroke-linecap="round"/>
+  <ellipse cx="155" cy="50" rx="12" ry="15" fill="url(#pinkHair)"/>
+  <path d="M 155 65 Q 165 120 160 180 Q 158 220 150 260" stroke="url(#pinkHair)" stroke-width="20" fill="none" stroke-linecap="round"/>
+  <!-- Bangs -->
+  <path d="M 65 30 Q 70 50 68 62" stroke="url(#pinkHair)" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <path d="M 85 28 Q 82 48 80 58" stroke="url(#pinkHair)" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M 115 28 Q 118 48 120 58" stroke="url(#pinkHair)" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M 135 30 Q 130 50 132 62" stroke="url(#pinkHair)" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <!-- Hair ties -->
+  <ellipse cx="45" cy="55" rx="8" ry="5" fill="#4a2a3a"/>
+  <ellipse cx="155" cy="55" rx="8" ry="5" fill="#4a2a3a"/>
+</svg>
